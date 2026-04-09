@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../data/models/quote.dart';
@@ -16,8 +17,7 @@ class FavoritesScreen extends ConsumerStatefulWidget {
 
 class _FavoritesScreenState extends ConsumerState<FavoritesScreen> {
   Future<void> _copyQuote(Quote quote) async {
-    await Clipboard.setData(
-        ClipboardData(text: '${quote.text}\n— ${quote.source}'));
+    await Clipboard.setData(ClipboardData(text: quote.shareBody));
     if (!mounted) {
       return;
     }
@@ -28,7 +28,7 @@ class _FavoritesScreenState extends ConsumerState<FavoritesScreen> {
   }
 
   Future<void> _shareQuote(Quote quote) {
-    return Share.share('${quote.text}\n— ${quote.source}');
+    return Share.share(quote.shareBody);
   }
 
   void _openDetail(Quote quote, bool isFavorite) {
@@ -51,6 +51,13 @@ class _FavoritesScreenState extends ConsumerState<FavoritesScreen> {
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
     final ColorScheme scheme = theme.colorScheme;
+    final TextStyle urduStyle = GoogleFonts.getFont(
+      'Noto Nastaliq Urdu',
+      fontSize: 22,
+      height: 1.9,
+      fontWeight: FontWeight.w500,
+      color: scheme.primary,
+    );
     final QuoteFeedState state = ref.watch(quoteFeedProvider);
     final QuoteFeedNotifier notifier = ref.read(quoteFeedProvider.notifier);
     final List<Quote> favorites = state.favoriteQuotes;
@@ -114,9 +121,21 @@ class _FavoritesScreenState extends ConsumerState<FavoritesScreen> {
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            quote.text,
+                            quote.textEn,
                             style: theme.textTheme.titleMedium
                                 ?.copyWith(height: 1.4),
+                          ),
+                          const SizedBox(height: 8),
+                          Directionality(
+                            textDirection: TextDirection.rtl,
+                            child: Align(
+                              alignment: Alignment.centerRight,
+                              child: Text(
+                                quote.textUr,
+                                textAlign: TextAlign.right,
+                                style: urduStyle,
+                              ),
+                            ),
                           ),
                           const SizedBox(height: 10),
                           Text(

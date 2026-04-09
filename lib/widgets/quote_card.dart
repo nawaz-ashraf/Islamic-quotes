@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../data/models/quote.dart';
 
@@ -71,7 +72,15 @@ class QuoteCard extends StatelessWidget {
             builder: (BuildContext context, BoxConstraints constraints) {
               final bool compact =
                   constraints.maxHeight < 620 || constraints.maxWidth < 360;
-              final double quoteFontSize = compact ? 31 : 39;
+              final double quoteFontSize = compact ? 31 : 38;
+              final TextStyle urduStyle = GoogleFonts.getFont(
+                'Noto Nastaliq Urdu',
+                fontSize: compact ? 24 : 27,
+                height: compact ? 1.8 : 1.9,
+                fontWeight: FontWeight.w500,
+                color: theme.colorScheme.primary
+                    .withValues(alpha: isDark ? 0.9 : 0.95),
+              );
 
               return Material(
                 color: theme.colorScheme.surface
@@ -134,11 +143,23 @@ class QuoteCard extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 6),
                                 Text(
-                                  quote.text,
+                                  quote.textEn,
                                   style:
                                       theme.textTheme.headlineMedium?.copyWith(
                                     fontSize: quoteFontSize,
                                     height: 1.16,
+                                  ),
+                                ),
+                                const SizedBox(height: 12),
+                                Directionality(
+                                  textDirection: TextDirection.rtl,
+                                  child: Align(
+                                    alignment: Alignment.centerRight,
+                                    child: Text(
+                                      quote.textUr,
+                                      textAlign: TextAlign.right,
+                                      style: urduStyle,
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(height: 18),

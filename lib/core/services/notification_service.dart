@@ -10,14 +10,16 @@ class NotificationService {
 
   static final NotificationService instance = NotificationService._();
 
-  final FlutterLocalNotificationsPlugin _plugin = FlutterLocalNotificationsPlugin();
+  final FlutterLocalNotificationsPlugin _plugin =
+      FlutterLocalNotificationsPlugin();
   bool _isInitialized = false;
 
   Future<void> init({bool requestPermission = false}) async {
     if (_isInitialized) {
       if (requestPermission) {
         await _plugin
-            .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
+            .resolvePlatformSpecificImplementation<
+                AndroidFlutterLocalNotificationsPlugin>()
             ?.requestNotificationsPermission();
       }
       return;
@@ -32,7 +34,8 @@ class NotificationService {
     await _plugin.initialize(initSettings);
 
     final AndroidFlutterLocalNotificationsPlugin? androidPlugin =
-        _plugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
+        _plugin.resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>();
 
     if (requestPermission) {
       await androidPlugin?.requestNotificationsPermission();
@@ -52,7 +55,7 @@ class NotificationService {
   Future<void> scheduleDailyQuote({required Quote quote}) async {
     await init(requestPermission: true);
 
-    final String body = '${quote.text}\n— ${quote.source}';
+    final String body = quote.shareBody;
     final NotificationDetails details = NotificationDetails(
       android: AndroidNotificationDetails(
         'daily_quote_channel',
@@ -83,7 +86,8 @@ class NotificationService {
     if (quotes.isEmpty) {
       return const Quote(
         id: -1,
-        text: 'Verily, in the remembrance of Allah do hearts find rest.',
+        textEn: 'Verily, in the remembrance of Allah do hearts find rest.',
+        textUr: 'سن لو! دلوں کا اطمینان اللہ کے ذکر ہی میں ہے۔',
         source: 'Quran 13:28',
         category: 'Faith',
       );

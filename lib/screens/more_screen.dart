@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../core/constants/more_section_content.dart';
+import '../core/constants/visual_section_data.dart';
+import '../widgets/category_card.dart';
+import '../widgets/featured_quote_card.dart';
+import '../widgets/section_header.dart';
 import 'settings_screen.dart';
 
 class MoreScreen extends StatelessWidget {
@@ -9,162 +13,169 @@ class MoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    final ColorScheme scheme = theme.colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('More'),
-        actions: <Widget>[
-          IconButton(
-            tooltip: 'Settings',
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute<void>(builder: (_) => const SettingsScreen()),
-              );
-            },
-            icon: const Icon(Icons.settings_outlined),
-          ),
-        ],
-      ),
-      body: LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-          final int crossAxisCount = constraints.maxWidth >= 900
-              ? 3
-              : (constraints.maxWidth >= 560 ? 2 : 1);
-
-          return SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(16, 10, 16, 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(24),
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: <Color>[
-                        scheme.primaryContainer.withValues(alpha: 0.85),
-                        scheme.secondaryContainer.withValues(alpha: 0.65),
-                      ],
-                    ),
+      body: Column(
+        children: <Widget>[
+          SectionHeader(
+            title: 'More',
+            leadingIcon: Icons.widgets_rounded,
+            trailing: _HeaderSettingsButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    builder: (_) => const SettingsScreen(),
                   ),
+                );
+              },
+            ),
+          ),
+          Expanded(
+            child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints) {
+                final int crossAxisCount = constraints.maxWidth >= 1024
+                    ? 3
+                    : (constraints.maxWidth >= 390 ? 2 : 1);
+
+                final double spacing = 12;
+                final double tileHeight = crossAxisCount == 1 ? 170 : 196;
+                final double tileWidth = (constraints.maxWidth -
+                        32 -
+                        (crossAxisCount - 1) * spacing) /
+                    crossAxisCount;
+
+                return SingleChildScrollView(
+                  padding: const EdgeInsets.fromLTRB(16, 14, 16, 24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+                      FeaturedQuoteCard(
+                        quote: VisualSectionData.moreBanner.quote,
+                        source: VisualSectionData.moreBanner.source,
+                        imageUrl: VisualSectionData.moreBanner.imageUrl,
+                      ),
+                      const SizedBox(height: 14),
                       Text(
-                        'Sacred Knowledge Corner',
+                        'Discover more Islamic resources',
                         style: theme.textTheme.titleMedium?.copyWith(
-                          fontSize: 19,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: 6),
                       Text(
-                        'Browse verified Islamic references and spiritually uplifting reminders in a calm, organized layout.',
+                        'Open a section to read verified reminders and references.',
                         style: theme.textTheme.bodyMedium,
+                      ),
+                      const SizedBox(height: 12),
+                      GridView.builder(
+                        itemCount: MoreSectionData.sections.length,
+                        shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: crossAxisCount,
+                          crossAxisSpacing: spacing,
+                          mainAxisSpacing: spacing,
+                          childAspectRatio: tileWidth / tileHeight,
+                        ),
+                        itemBuilder: (BuildContext context, int index) {
+                          final MoreSectionContent section =
+                              MoreSectionData.sections[index];
+                          final MoreVisualData visual =
+                              VisualSectionData.moreBySectionId[section.id] ??
+                                  MoreVisualData(
+                                    sectionId: section.id,
+                                    title: section.title,
+                                    icon: section.icon,
+                                    imageUrl:
+                                        VisualSectionData.moreBanner.imageUrl,
+                                  );
+
+                          return _MoreTileWithMeta(
+                            section: section,
+                            visual: visual,
+                          );
+                        },
                       ),
                     ],
                   ),
-                ),
-                const SizedBox(height: 16),
-                GridView.builder(
-                  itemCount: MoreSectionData.sections.length,
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: crossAxisCount,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    childAspectRatio: crossAxisCount == 1 ? 2.6 : 1.2,
-                  ),
-                  itemBuilder: (BuildContext context, int index) {
-                    final MoreSectionContent section =
-                        MoreSectionData.sections[index];
-                    return _MoreSectionTile(section: section);
-                  },
-                ),
-              ],
+                );
+              },
             ),
-          );
-        },
+          ),
+        ],
       ),
     );
   }
 }
 
-class _MoreSectionTile extends StatelessWidget {
-  const _MoreSectionTile({required this.section});
+class _HeaderSettingsButton extends StatelessWidget {
+  const _HeaderSettingsButton({required this.onPressed});
+
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.16),
+        shape: BoxShape.circle,
+      ),
+      child: IconButton(
+        tooltip: 'Settings',
+        onPressed: onPressed,
+        icon: const Icon(Icons.settings_outlined, color: Colors.white),
+        splashRadius: 22,
+        padding: EdgeInsets.zero,
+      ),
+    );
+  }
+}
+
+class _MoreTileWithMeta extends StatelessWidget {
+  const _MoreTileWithMeta({required this.section, required this.visual});
 
   final MoreSectionContent section;
+  final MoreVisualData visual;
 
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    final ColorScheme scheme = theme.colorScheme;
 
-    return Material(
-      color: theme.colorScheme.surface,
-      borderRadius: BorderRadius.circular(20),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(20),
-        onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute<void>(
-              builder: (_) => MoreSectionDetailScreen(section: section),
-            ),
-          );
-        },
-        child: Ink(
-          padding: const EdgeInsets.fromLTRB(14, 14, 14, 12),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(
-              color: scheme.outlineVariant.withValues(alpha: 0.4),
-            ),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Container(
-                width: 42,
-                height: 42,
-                decoration: BoxDecoration(
-                  color: scheme.primaryContainer.withValues(alpha: 0.8),
-                  borderRadius: BorderRadius.circular(12),
+    return Stack(
+      children: <Widget>[
+        Positioned.fill(
+          child: CategoryCard(
+            title: visual.title,
+            icon: visual.icon,
+            imageUrl: visual.imageUrl,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => MoreSectionDetailScreen(section: section),
                 ),
-                child: Icon(section.icon, color: scheme.onPrimaryContainer),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                section.title,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: theme.textTheme.titleMedium,
-              ),
-              const SizedBox(height: 6),
-              Expanded(
-                child: Text(
-                  section.subtitle,
-                  maxLines: 3,
-                  overflow: TextOverflow.ellipsis,
-                  style: theme.textTheme.bodySmall,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                '${section.entries.length} items',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  fontWeight: FontWeight.w700,
-                  color: scheme.primary,
-                ),
-              ),
-            ],
+              );
+            },
           ),
         ),
-      ),
+        Positioned(
+          right: 8,
+          bottom: 8,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
+            decoration: BoxDecoration(
+              color: Colors.black.withValues(alpha: 0.42),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Text(
+              '${section.entries.length} items',
+              style: theme.textTheme.labelSmall?.copyWith(
+                color: Colors.white,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

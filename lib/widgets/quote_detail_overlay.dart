@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../data/models/quote.dart';
 
@@ -21,6 +22,13 @@ class QuoteDetailOverlay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
+    final TextStyle urduStyle = GoogleFonts.getFont(
+      'Noto Nastaliq Urdu',
+      fontSize: 29,
+      height: 1.9,
+      fontWeight: FontWeight.w500,
+      color: theme.colorScheme.primary,
+    );
 
     return Container(
       margin: const EdgeInsets.only(top: 40),
@@ -62,10 +70,22 @@ class QuoteDetailOverlay extends StatelessWidget {
               ),
               const SizedBox(height: 14),
               Text(
-                quote.text,
+                quote.textEn,
                 style: theme.textTheme.headlineMedium?.copyWith(
                   fontSize: 36,
                   height: 1.18,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Directionality(
+                textDirection: TextDirection.rtl,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    quote.textUr,
+                    textAlign: TextAlign.right,
+                    style: urduStyle,
+                  ),
                 ),
               ),
               const SizedBox(height: 16),

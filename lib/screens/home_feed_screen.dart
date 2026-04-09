@@ -22,6 +22,8 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
   final PageController _pageController = PageController();
   int _lastIndex = 0;
 
+  static const double _topOverlayReservedSpace = 56;
+
   @override
   void dispose() {
     _pageController.dispose();
@@ -29,8 +31,7 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
   }
 
   Future<void> _copyQuote(Quote quote) async {
-    await Clipboard.setData(
-        ClipboardData(text: '${quote.text}\n— ${quote.source}'));
+    await Clipboard.setData(ClipboardData(text: quote.shareBody));
     if (!mounted) {
       return;
     }
@@ -41,7 +42,7 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
   }
 
   Future<void> _shareQuote(Quote quote) {
-    return Share.share('${quote.text}\n— ${quote.source}');
+    return Share.share(quote.shareBody);
   }
 
   Future<void> _openDetail(Quote quote, bool isFavorite) {
@@ -102,7 +103,7 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Try another category or clear the filter.',
+                  'Try another category or return to all quotes.',
                   style: Theme.of(context).textTheme.bodyMedium,
                   textAlign: TextAlign.center,
                 ),
@@ -121,61 +122,64 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          PageView.builder(
-            controller: _pageController,
-            scrollDirection: Axis.vertical,
-            onPageChanged: (int index) {
-              _lastIndex = index;
-              // Gentle tactile feedback mimics premium reels-like UX.
-              HapticFeedback.selectionClick();
-              // Pagination preloading: extend the list as user approaches the end.
-              notifier.maybeLoadMore(index);
-            },
-            itemCount: quotes.length,
-            itemBuilder: (BuildContext context, int index) {
-              final Quote quote = quotes[index];
-              final bool isFavorite = notifier.isFavorite(quote.id);
+          Padding(
+            padding: const EdgeInsets.only(top: _topOverlayReservedSpace),
+            child: PageView.builder(
+              controller: _pageController,
+              scrollDirection: Axis.vertical,
+              onPageChanged: (int index) {
+                _lastIndex = index;
+                // Gentle tactile feedback mimics premium reels-like UX.
+                HapticFeedback.selectionClick();
+                // Pagination preloading: extend the list as user approaches the end.
+                notifier.maybeLoadMore(index);
+              },
+              itemCount: quotes.length,
+              itemBuilder: (BuildContext context, int index) {
+                final Quote quote = quotes[index];
+                final bool isFavorite = notifier.isFavorite(quote.id);
 
-              final Widget card = QuoteCard(
-                quote: quote,
-                isFavorite: isFavorite,
-                onFavorite: () => notifier.toggleFavorite(quote.id),
-                onCopy: () => _copyQuote(quote),
-                onShare: () => _shareQuote(quote),
-                onTap: () => _openDetail(quote, isFavorite),
-                onLongPress: () => _openActions(quote, isFavorite),
-              );
+                final Widget card = QuoteCard(
+                  quote: quote,
+                  isFavorite: isFavorite,
+                  onFavorite: () => notifier.toggleFavorite(quote.id),
+                  onCopy: () => _copyQuote(quote),
+                  onShare: () => _shareQuote(quote),
+                  onTap: () => _openDetail(quote, isFavorite),
+                  onLongPress: () => _openActions(quote, isFavorite),
+                );
 
-              // Motion polish: subtle scale/opacity based on scroll position.
-              return AnimatedBuilder(
-                animation: _pageController,
-                child: card,
-                builder: (BuildContext context, Widget? child) {
-                  double page = _lastIndex.toDouble();
-                  if (_pageController.hasClients &&
-                      _pageController.position.hasContentDimensions) {
-                    page = _pageController.page ?? _lastIndex.toDouble();
-                  }
+                // Motion polish: subtle scale/opacity based on scroll position.
+                return AnimatedBuilder(
+                  animation: _pageController,
+                  child: card,
+                  builder: (BuildContext context, Widget? child) {
+                    double page = _lastIndex.toDouble();
+                    if (_pageController.hasClients &&
+                        _pageController.position.hasContentDimensions) {
+                      page = _pageController.page ?? _lastIndex.toDouble();
+                    }
 
-                  final double delta = (page - index).clamp(-1.0, 1.0);
-                  final double t = delta.abs();
+                    final double delta = (page - index).clamp(-1.0, 1.0);
+                    final double t = delta.abs();
 
-                  final double scale = lerpDouble(1.0, 0.965, t)!;
-                  final double opacity = lerpDouble(1.0, 0.60, t)!;
-                  final double translateY =
-                      lerpDouble(0.0, 18.0, t)! * (delta.isNegative ? -1 : 1);
+                    final double scale = lerpDouble(1.0, 0.965, t)!;
+                    final double opacity = lerpDouble(1.0, 0.60, t)!;
+                    final double translateY =
+                        lerpDouble(0.0, 18.0, t)! * (delta.isNegative ? -1 : 1);
 
-                  return Transform.translate(
-                    offset: Offset(0, translateY),
-                    child: Transform.scale(
-                      scale: scale,
-                      alignment: Alignment.center,
-                      child: Opacity(opacity: opacity, child: child),
-                    ),
-                  );
-                },
-              );
-            },
+                    return Transform.translate(
+                      offset: Offset(0, translateY),
+                      child: Transform.scale(
+                        scale: scale,
+                        alignment: Alignment.center,
+                        child: Opacity(opacity: opacity, child: child),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
           ),
           Positioned(
             top: 0,
@@ -190,11 +194,11 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
                     Expanded(
                       child: Container(
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 12,
+                          horizontal: 14,
                           vertical: 10,
                         ),
                         decoration: BoxDecoration(
-                          color: scheme.surface.withValues(alpha: 0.82),
+                          color: scheme.surface.withValues(alpha: 0.96),
                           borderRadius: BorderRadius.circular(999),
                           border: Border.all(
                             color:
@@ -220,12 +224,6 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
                           ],
                         ),
                       ),
-                    ),
-                    const SizedBox(width: 10),
-                    IconButton.filledTonal(
-                      onPressed: () => notifier.setFeedCategory(null),
-                      icon: const Icon(Icons.filter_alt_off_rounded),
-                      tooltip: 'Clear category filter',
                     ),
                   ],
                 ),

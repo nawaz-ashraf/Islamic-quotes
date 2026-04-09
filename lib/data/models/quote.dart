@@ -3,20 +3,35 @@ import 'dart:convert';
 class Quote {
   const Quote({
     required this.id,
-    required this.text,
+    required this.textEn,
+    required this.textUr,
     required this.source,
     required this.category,
   });
 
   final int id;
-  final String text;
+  final String textEn;
+  final String textUr;
   final String source;
   final String category;
 
+  // Backward-compatible alias for legacy call-sites.
+  String get text => textEn;
+
+  String get bilingualText => textUr == textEn ? textEn : '$textEn\n$textUr';
+
+  String get shareBody => '$bilingualText\n— $source';
+
   factory Quote.fromMap(Map<String, dynamic> map) {
+    final String parsedTextEn =
+        (map['text_en'] ?? map['text'] ?? '').toString().trim();
+    final String parsedTextUr =
+        (map['text_ur'] ?? map['text_urdu'] ?? parsedTextEn).toString().trim();
+
     return Quote(
-      id: map['id'] as int,
-      text: map['text'] as String,
+      id: (map['id'] as num).toInt(),
+      textEn: parsedTextEn,
+      textUr: parsedTextUr,
       source: map['source'] as String,
       category: map['category'] as String,
     );
@@ -25,7 +40,8 @@ class Quote {
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'id': id,
-      'text': text,
+      'text_en': textEn,
+      'text_ur': textUr,
       'source': source,
       'category': category,
     };

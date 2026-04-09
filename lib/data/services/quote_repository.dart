@@ -68,6 +68,49 @@ class QuoteRepository {
     'Serve others quietly and leave your reward with Allah',
   ];
 
+  static const List<String> _reflectionStemsUr = <String>[
+    'اپنے دن کا آغاز اللہ کے مخلصانہ ذکر سے کریں',
+    'جب دل بوجھل ہو تو رک جائیں اور خاموشی سے دعا کریں',
+    'صبر کا ایک چھوٹا سا عمل آپ کے دل کو ندامت سے بچا سکتا ہے',
+    'جب جذبات تیز ہوں تو نرم الفاظ اختیار کریں',
+    'ہر اہم کام سے پہلے اپنی نیت کو تازہ کریں',
+    'اپنے سب سے مصروف دنوں میں بھی نماز کی حفاظت کریں',
+    'حقیقی طاقت اُس وقت ظاہر ہوتی ہے جب آپ اللہ کی خاطر معاف کرتے ہیں',
+    'شکر گزاری اُس وقت بڑھتی ہے جب آپ اپنی موجود نعمتوں کو پہچانتے ہیں',
+    'سچ کو حکمت اور شفقت کے ساتھ بیان کریں',
+    'اپنی پریشانیاں لوگوں سے پہلے اللہ کے حضور پیش کریں',
+    'چھوٹے نیک اعمال میں پابندی روح کو سنوار دیتی ہے',
+    'پرسکون جواب جھگڑے کو شروع ہونے سے پہلے ختم کر سکتا ہے',
+    'یاد رکھیں کہ ہر تاخیر کے پیچھے اللہ کی حکمت ہوتی ہے',
+    'آپ کا پوشیدہ اخلاص عوامی تعریف سے زیادہ قیمتی ہے',
+    'مومن عام لمحات میں بھی اچھے اخلاق سے نمایاں ہوتا ہے',
+    'اپنے سکون کا پہلا ذریعہ قرآن کو بنائیں',
+    'طویل آزمائشوں میں بھی اللہ سے امید زندہ رکھیں',
+    'اپنی زبان کو اُن الفاظ سے بچائیں جو دل کو تاریک کر دیں',
+    'توبہ وہ دروازہ ہے جو زندگی باقی رہنے تک کھلا رہتا ہے',
+    'مسلسل بے چینی کے بجائے اللہ پر بھروسہ اختیار کریں',
+    'ہر مشکل روحانی ترقی کا راستہ بن سکتی ہے',
+    'خاندان کے ساتھ نرمی روزمرہ کے بابرکت اعمال میں سے ہے',
+    'جب خاموشی نقصان سے بچائے تو وہ بھی عبادت بن جاتی ہے',
+    'بڑے فیصلوں سے پہلے اللہ سے رہنمائی مانگیں',
+    'عاجز دل حکمت کو زیادہ آسانی سے قبول کرتا ہے',
+    'رات کے ایک مخلص سجدے کو کبھی معمولی نہ سمجھیں',
+    'دنیاوی کامیابی کی کوشش سے پہلے اپنی نیت پاک کریں',
+    'اللہ کے بارے میں حسنِ ظن روح کو سکون دیتا ہے',
+    'اپنے نفس کو خوش کرنے سے پہلے دل کو ذکرِ الٰہی سے غذا دیں',
+    'ہر آزمائش میں اللہ کے قریب ہونے کی دعوت ہوتی ہے',
+    'غصے کو صبر اور نماز سے قابو میں رکھیں',
+    'آسانی میں شکر ادا کرنا سختی میں صبر کے لیے تیار کرتا ہے',
+    'اخلاق اس سے ظاہر ہوتے ہیں کہ آپ اُن لوگوں سے کیسا سلوک کرتے ہیں جو آپ کو فائدہ نہیں دے سکتے',
+    'مومن ناکامیوں کے بعد بھی آگے بڑھتا رہتا ہے',
+    'جب بھی سینہ تنگ محسوس ہو تو استغفار کی طرف لوٹ آئیں',
+    'اللہ پر آپ کا پُرسکون بھروسہ خود ایک عبادت ہے',
+    'راستے آسان لگیں تب بھی اصولی فیصلے اختیار کریں',
+    'معاملات میں رحمت آپ کی زندگی میں رحمت لے آتی ہے',
+    'اپنی صبح و شام کو ذکرِ الٰہی سے محفوظ رکھیں',
+    'دوسروں کی خاموشی سے خدمت کریں اور اجر اللہ پر چھوڑ دیں',
+  ];
+
   static const List<String> _reflectionClosings = <String>[
     ', and trust that no sincere effort is ever lost.',
     ', then take one honest step toward what is right.',
@@ -77,6 +120,17 @@ class QuoteRepository {
     ', while remembering that ease comes after hardship.',
     ', and choose what pleases Allah over what pleases the ego.',
     ', so your heart stays anchored in hope and gratitude.',
+  ];
+
+  static const List<String> _reflectionClosingsUr = <String>[
+    '، اور یقین رکھیں کہ کوئی بھی مخلص کوشش ضائع نہیں ہوتی۔',
+    '، پھر حق کی طرف ایک سچا قدم اٹھائیں۔',
+    '، اور اپنے کردار کو اپنے ایمان کا آئینہ بنائیں۔',
+    '، کیونکہ اللہ آپ کی جدوجہد اور اخلاص دونوں کو دیکھتا ہے۔',
+    '، اور اپنے اگلے عمل میں برکت کے لیے اللہ سے دعا کریں۔',
+    '، اور یاد رکھیں کہ سختی کے بعد آسانی آتی ہے۔',
+    '، اور وہی اختیار کریں جو اللہ کو پسند ہو نہ کہ نفس کو۔',
+    '، تاکہ آپ کا دل امید اور شکر پر قائم رہے۔',
   ];
 
   Future<List<Quote>> loadQuotes() async {
@@ -114,19 +168,29 @@ class QuoteRepository {
     final List<Quote> generated = <Quote>[];
     int nextId = startId;
 
-    for (final String stem in _reflectionStems) {
-      for (final String closing in _reflectionClosings) {
+    for (int stemIndex = 0; stemIndex < _reflectionStems.length; stemIndex++) {
+      final String stemEn = _reflectionStems[stemIndex];
+      final String stemUr = _reflectionStemsUr[stemIndex];
+
+      for (int closingIndex = 0;
+          closingIndex < _reflectionClosings.length;
+          closingIndex++) {
         if (generated.length >= count) {
           break;
         }
 
+        final String closingEn = _reflectionClosings[closingIndex];
+        final String closingUr = _reflectionClosingsUr[closingIndex];
+
         final String category =
             _reminderCategories[generated.length % _reminderCategories.length];
-        final String text = '$stem$closing';
+        final String textEn = '$stemEn$closingEn';
+        final String textUr = '$stemUr$closingUr';
         generated.add(
           Quote(
             id: nextId,
-            text: text,
+            textEn: textEn,
+            textUr: textUr,
             source: 'General Islamic Reminder',
             category: category,
           ),
@@ -147,8 +211,10 @@ class QuoteRepository {
       generated.add(
         Quote(
           id: nextId,
-          text:
+          textEn:
               'Hold firmly to sincere faith, good character, and trust in Allah in every season of life.',
+          textUr:
+              'زندگی کے ہر مرحلے میں اخلاصِ ایمان، اچھے اخلاق اور اللہ پر بھروسے کو مضبوطی سے تھامے رکھیں۔',
           source: 'General Islamic Reminder',
           category: category,
         ),

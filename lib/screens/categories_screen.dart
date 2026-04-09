@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/constants/app_constants.dart';
+import '../core/constants/visual_section_data.dart';
 import '../data/models/quote.dart';
 import '../providers/quote_feed_provider.dart';
+import '../widgets/category_card.dart';
+import '../widgets/featured_quote_card.dart';
+import '../widgets/section_header.dart';
 
 class CategoriesScreen extends ConsumerWidget {
   const CategoriesScreen({required this.onApplyFilter, super.key});
@@ -13,7 +17,6 @@ class CategoriesScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final ThemeData theme = Theme.of(context);
-    final ColorScheme scheme = theme.colorScheme;
     final QuoteFeedState state = ref.watch(quoteFeedProvider);
 
     final Map<String, int> counts = <String, int>{
@@ -23,126 +26,210 @@ class CategoriesScreen extends ConsumerWidget {
             .length,
     };
 
-    return Scaffold(
-      appBar: AppBar(title: const Text('Categories')),
-      body: LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-          final int crossAxisCount = constraints.maxWidth >= 900
-              ? 3
-              : (constraints.maxWidth >= 560 ? 2 : 1);
+    final Quote? featuredQuote =
+        state.allQuotes.isNotEmpty ? state.allQuotes.first : null;
 
-          return SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(16, 10, 16, 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(22),
-                    color: scheme.surfaceContainerLow,
-                  ),
+    final String featuredQuoteText =
+        featuredQuote?.textEn ?? VisualSectionData.categoriesBanner.quote;
+    final String featuredQuoteSource =
+        featuredQuote?.source ?? VisualSectionData.categoriesBanner.source;
+
+    final List<CategoryVisualData> visuals = AppConstants.categories
+        .map(
+          (String category) =>
+              VisualSectionData.categoryByName[category] ??
+              CategoryVisualData(
+                category: category,
+                title: category,
+                icon: Icons.category_rounded,
+                imageUrl: VisualSectionData.categoriesBanner.imageUrl,
+              ),
+        )
+        .toList(growable: false);
+
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          const SectionHeader(
+            title: 'Categories',
+            leadingIcon: Icons.menu_book_rounded,
+          ),
+          Expanded(
+            child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints) {
+                final int crossAxisCount = constraints.maxWidth >= 1024
+                    ? 3
+                    : (constraints.maxWidth >= 390 ? 2 : 1);
+
+                final double gridSpacing = 12;
+                final double tileHeight = crossAxisCount == 1 ? 170 : 196;
+                final double tileWidth = (constraints.maxWidth -
+                        32 -
+                        (crossAxisCount - 1) * gridSpacing) /
+                    crossAxisCount;
+
+                return SingleChildScrollView(
+                  padding: const EdgeInsets.fromLTRB(16, 14, 16, 24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+                      FeaturedQuoteCard(
+                        quote: featuredQuoteText,
+                        source: featuredQuoteSource,
+                        imageUrl: VisualSectionData.categoriesBanner.imageUrl,
+                        onTap: () {
+                          onApplyFilter(null);
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text('Showing all quotes in feed.'),
+                            ),
+                          );
+                        },
+                      ),
+                      const SizedBox(height: 14),
                       Text(
                         'Browse by spiritual focus',
-                        style: theme.textTheme.titleMedium,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.w700,
+                        ),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: 6),
                       Text(
-                        'Select a category to filter your main feed instantly.',
+                        'Tap a card to filter your home feed instantly.',
                         style: theme.textTheme.bodyMedium,
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 10),
                       OutlinedButton.icon(
                         onPressed: () {
                           onApplyFilter(null);
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
-                                content: Text('Showing all quotes in feed.')),
+                              content: Text('Showing all quotes in feed.'),
+                            ),
                           );
                         },
                         icon: const Icon(Icons.grid_view_rounded),
                         label: Text('All Quotes (${state.allQuotes.length})'),
                       ),
+                      const SizedBox(height: 12),
+                      GridView.builder(
+                        itemCount: visuals.length,
+                        shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: crossAxisCount,
+                          crossAxisSpacing: gridSpacing,
+                          mainAxisSpacing: gridSpacing,
+                          childAspectRatio: tileWidth / tileHeight,
+                        ),
+                        itemBuilder: (BuildContext context, int index) {
+                          final CategoryVisualData item = visuals[index];
+                          final bool selected =
+                              state.selectedFeedCategory == item.category;
+
+                          return _CategoryTileWithMeta(
+                            visual: item,
+                            quoteCount: counts[item.category] ?? 0,
+                            selected: selected,
+                            onTap: () {
+                              onApplyFilter(item.category);
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(
+                                    'Feed filtered by ${item.title}.',
+                                  ),
+                                ),
+                              );
+                            },
+                          );
+                        },
+                      ),
                     ],
                   ),
-                ),
-                const SizedBox(height: 14),
-                GridView.builder(
-                  itemCount: AppConstants.categories.length,
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: crossAxisCount,
-                    childAspectRatio: crossAxisCount == 1 ? 2.4 : 1.25,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                  ),
-                  itemBuilder: (BuildContext context, int index) {
-                    final String category = AppConstants.categories[index];
-                    final bool selected =
-                        state.selectedFeedCategory == category;
-
-                    return InkWell(
-                      borderRadius: BorderRadius.circular(20),
-                      onTap: () {
-                        onApplyFilter(category);
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                              content: Text('Feed filtered by $category.')),
-                        );
-                      },
-                      child: Ink(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: selected
-                              ? scheme.primaryContainer
-                              : scheme.surfaceContainerHigh
-                                  .withValues(alpha: 0.45),
-                          border: Border.all(
-                            color: selected
-                                ? scheme.primary.withValues(alpha: 0.5)
-                                : scheme.outlineVariant.withValues(alpha: 0.35),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(14),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                category,
-                                style: theme.textTheme.titleMedium,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                              const Spacer(),
-                              Text(
-                                '${counts[category] ?? 0} quotes',
-                                style: theme.textTheme.bodySmall?.copyWith(
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Icon(
-                                selected
-                                    ? Icons.check_circle_rounded
-                                    : Icons.swipe_up_alt_rounded,
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              ],
+                );
+              },
             ),
-          );
-        },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CategoryTileWithMeta extends StatelessWidget {
+  const _CategoryTileWithMeta({
+    required this.visual,
+    required this.quoteCount,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final CategoryVisualData visual;
+  final int quoteCount;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
+
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(18),
+        border: selected
+            ? Border.all(
+                color: theme.colorScheme.primary.withValues(alpha: 0.95),
+                width: 2,
+              )
+            : null,
+      ),
+      child: Stack(
+        children: <Widget>[
+          Positioned.fill(
+            child: CategoryCard(
+              title: visual.title,
+              icon: visual.icon,
+              imageUrl: visual.imageUrl,
+              onTap: onTap,
+            ),
+          ),
+          Positioned(
+            right: 8,
+            bottom: 8,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
+              decoration: BoxDecoration(
+                color: Colors.black.withValues(alpha: 0.45),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                '$quoteCount quotes',
+                style: theme.textTheme.labelSmall?.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ),
+          if (selected)
+            Positioned(
+              top: 8,
+              right: 8,
+              child: Container(
+                width: 24,
+                height: 24,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.check_circle_rounded,
+                  color: theme.colorScheme.primary,
+                  size: 20,
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
