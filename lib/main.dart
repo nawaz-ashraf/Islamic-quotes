@@ -1,0 +1,84 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'core/constants/app_constants.dart';
+import 'core/services/notification_service.dart';
+import 'core/theme/app_theme.dart';
+import 'data/services/local_storage_service.dart';
+import 'providers/core_providers.dart';
+import 'providers/onboarding_provider.dart';
+import 'providers/theme_provider.dart';
+import 'screens/main_shell_screen.dart';
+import 'screens/onboarding_screen.dart';
+import 'screens/splash_screen.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final LocalStorageService localStorage = LocalStorageService();
+  await localStorage.init();
+  await NotificationService.instance.init();
+
+  runApp(
+    ProviderScope(
+      overrides: <Override>[
+        localStorageServiceProvider.overrideWithValue(localStorage),
+      ],
+      child: const IslamicQuotesApp(),
+    ),
+  );
+}
+
+class IslamicQuotesApp extends ConsumerWidget {
+  const IslamicQuotesApp({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ThemeMode themeMode = ref.watch(themeModeProvider);
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: AppConstants.appName,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeMode,
+      home: const AppLaunchGate(),
+    );
+  }
+}
+
+class AppLaunchGate extends ConsumerStatefulWidget {
+  const AppLaunchGate({super.key});
+
+  @override
+  ConsumerState<AppLaunchGate> createState() => _AppLaunchGateState();
+}
+
+class _AppLaunchGateState extends ConsumerState<AppLaunchGate> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _routeFromSplash());
+  }
+
+  Future<void> _routeFromSplash() async {
+    await Future<void>.delayed(const Duration(milliseconds: 1300));
+    if (!mounted) {
+      return;
+    }
+
+    final bool onboardingComplete = ref.read(onboardingProvider);
+    final Widget destination = onboardingComplete
+        ? const MainShellScreen()
+        : const OnboardingScreen();
+
+    await Navigator.of(
+      context,
+    ).pushReplacement(MaterialPageRoute<void>(builder: (_) => destination));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return const SplashScreen();
+  }
+}

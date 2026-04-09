@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sakinah - Quote Detail &amp; Customizer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#e9c349",
+                    "surface-variant": "#e4e2dd",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-tertiary-fixed": "#261900",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffe088",
+                    "on-primary-fixed": "#002117",
+                    "surface-bright": "#fbf9f4",
+                    "on-secondary-container": "#745c00",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#3e2b00",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#0b513d",
+                    "tertiary-container": "#5a4000",
+                    "on-secondary-fixed": "#241a00",
+                    "surface-container-high": "#eae8e3",
+                    "primary-fixed": "#b0f0d6",
+                    "primary-container": "#064e3b",
+                    "tertiary-fixed": "#ffdea5",
+                    "primary": "#003527",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c19",
+                    "background": "#fbf9f4",
+                    "outline-variant": "#bfc9c3",
+                    "on-tertiary-container": "#d3ac64",
+                    "secondary-container": "#fed65b",
+                    "surface-container": "#f0eee9",
+                    "inverse-surface": "#30312e",
+                    "inverse-primary": "#95d3ba",
+                    "surface-container-highest": "#e4e2dd",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#2b6954",
+                    "outline": "#707974",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#735c00",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f5f3ee",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-primary-container": "#80bea6",
+                    "surface-dim": "#dbdad5",
+                    "on-surface": "#1b1c19",
+                    "surface": "#fbf9f4",
+                    "on-surface-variant": "#404944",
+                    "primary-fixed-dim": "#95d3ba"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-noto-serif { font-family: 'Noto Serif', serif; }
+        .custom-glass {
+            background: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .canvas-shadow {
+            box-shadow: 0 12px 32px rgba(27, 28, 25, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f4] dark:bg-[#1b1c19] flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity scale-95 duration-200">
+<span class="material-symbols-outlined text-[#003527] dark:text-[#f5f3ee]">arrow_back</span>
+</button>
+<h1 class="font-noto-serif text-2xl tracking-tight text-[#003527] dark:text-[#f5f3ee]">Sakinah</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity scale-95 duration-200">
+<span class="material-symbols-outlined text-[#003527] dark:text-[#f5f3ee]">favorite</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-12">
+<!-- The Main Quote Canvas (Editorial Layout) -->
+<section class="relative group" id="quote-canvas">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden canvas-shadow transition-all duration-500 min-h-[500px] flex flex-col justify-center items-center text-center p-12 relative">
+<!-- Background Image (Optional/Hidden by default toggle) -->
+<div class="absolute inset-0 opacity-20 pointer-events-none transition-opacity duration-300">
+<img class="w-full h-full object-cover" data-alt="Soft morning sunlight streaming through an arched window onto a stone floor with dust motes dancing in the light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOWbAb2oJTGcIRqydStddt7jiUNwUdyUSiuU53JAvvmNKYf3uXLzh_fF1ULQlHV6llYDvuptR_xNX_k2Mw_Mbmehql67YEcf-wvax_rbIXEGcE7fBPSoff_QhnofPpExomap2SI1kfd9AyMdOuq2fsu47Z0TZVr76JjXKz1BzKk1JsLIyVH5_BfXnGArFH_swFL4K3gqdbi3tuhQ8xpdJtMoM-zxtWyffkV5h9Gbn8a2vvnDrX2LRj6iUgesyHmF8eREsThXd4L6E"/>
+</div>
+<!-- Reflection Chip -->
+<div class="z-10 mb-8">
+<span class="bg-secondary-fixed-dim text-on-secondary-fixed font-label text-xs uppercase tracking-[0.2em] px-4 py-1.5 rounded-full">
+                        Patience
+                    </span>
+</div>
+<!-- The Quote -->
+<div class="z-10 relative">
+<h2 class="font-noto-serif text-3xl md:text-4xl italic leading-relaxed text-primary mb-12 max-w-lg">
+                        "For indeed, with hardship [will be] ease. Indeed, with hardship [will be] ease."
+                    </h2>
+<p class="font-label text-sm uppercase tracking-widest text-outline">
+                        — Quran 94:5-6
+                    </p>
+</div>
+<!-- Subtle Decorative Element -->
+<div class="absolute bottom-8 right-8 opacity-10">
+<span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+</section>
+<!-- Customizer Panel -->
+<section class="space-y-8">
+<div class="flex items-center gap-3">
+<span class="w-8 h-px bg-outline-variant"></span>
+<h3 class="font-noto-serif text-lg text-primary">Customize Reflection</h3>
+</div>
+<!-- Background Styles -->
+<div class="space-y-4">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Background Atmosphere</p>
+<div class="grid grid-cols-4 gap-4">
+<button class="aspect-square rounded-xl bg-surface-container-high flex flex-col items-center justify-center gap-1 border-2 border-primary">
+<span class="material-symbols-outlined text-primary">format_color_fill</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Solid</span>
+</button>
+<button class="aspect-square rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-outline-variant transition-all overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-opacity" data-alt="Calm turquoise ocean waves gently lapping onto white sand beach at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdGaYm8bwon9Ns1GHjIEB-RiWhOz_ZAaIZtvCNVJo7ZsmlLlMyv0FWKprpMv64Exs0KQlUI3DJ5rGF1ToJz7SS0XVazJKVIjw2SSdUjjNxcUTSKbwiNkvV24P7BWoTijTBMlRp2aw6IH-ED70DoDhtv4WG6AePCVqtSaoMsKsG9H9idB2cl4HWHyOLhrIH-M6wtg7dTDfGw_ZgQ7jioJyTO0FTupz6obH6dvdTvSblGxU3gahMcpslLk4V8mNOUaZrYjOSlf0ySM0"/>
+<span class="relative z-10 material-symbols-outlined text-primary">image</span>
+<span class="relative z-10 text-[10px] font-bold uppercase tracking-tighter">Vista</span>
+</button>
+<button class="aspect-square rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-outline-variant transition-all overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-opacity" data-alt="Majestic mountain peaks covered in snow under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTDdomyyQ1qeACxSmZdJlyg_2Mb56XYGVlJqpwqpqKeTQW0BS7I5nq1-YB2rFKELE9XZlvWtey2dhXo2ogHx0HF-0EynOgTAqxRJaIaoRJPauC6foNAccSxlQUb9EI-leTdLs_XZTyYlkxr0DHlQQP-iiJ_wQE2Eqj4KjnogJD1k1LCcW6nntH2pVtkprzLnyOGi-5aQsCMYMKHptgbNDJ2LIup_FP9XdGY-iRBoOa8H7rDOwCN0IrkpUVoY6B87sXsu5nPkvZODM"/>
+<span class="relative z-10 material-symbols-outlined text-primary">filter_hdr</span>
+<span class="relative z-10 text-[10px] font-bold uppercase tracking-tighter">Nature</span>
+</button>
+<button class="aspect-square rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-outline-variant transition-all overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-opacity" data-alt="Abstract soft blur of warm light and bokeh circles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHrIg67Wnd00MD0LsTGQJeEveRE-seyDurM_NnYOyhLiMyLd4YAPA2QMAxbUI0TBB96fKAXDnYIS0ft4BW2ZPu5GdPJa7vML0hz73vJjNLvlebk8iOK2ZlrB4t3qm9ZuG90RzryDoXc4WXGNlkrE_TGzqzlj3XBdyl_k2tfNTYE35z1tn_PweN6Wj7JLMC3Pzqhqd-hKYXQWyTeSuYJAxtM_gNogFAU2Bx5g0EHweJ5FOO51rUlPXpxYfZUEQuxLKPcayQ7Xs17q4"/>
+<span class="relative z-10 material-symbols-outlined text-primary">texture</span>
+<span class="relative z-10 text-[10px] font-bold uppercase tracking-tighter">Grain</span>
+</button>
+</div>
+</div>
+<!-- Typography Toggle -->
+<div class="space-y-4">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Typographic Soul</p>
+<div class="flex p-1 bg-surface-container rounded-xl gap-1">
+<button class="flex-1 py-3 px-4 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-bold text-sm">
+                        Traditional Serif
+                    </button>
+<button class="flex-1 py-3 px-4 rounded-lg text-outline font-medium text-sm hover:bg-surface-container-high transition-colors">
+                        Modern Sans
+                    </button>
+</div>
+</div>
+</section>
+<!-- Share & Action Button -->
+<section class="pt-8 flex flex-col gap-4">
+<button class="w-full h-16 rounded-xl bg-primary text-on-primary flex items-center justify-center gap-3 group overflow-hidden relative shadow-lg active:scale-[0.98] transition-transform">
+<!-- Inner glow effect from design system -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-primary-container opacity-50"></div>
+<span class="relative z-10 material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">ios_share</span>
+<span class="relative z-10 font-bold uppercase tracking-widest">Share to Socials</span>
+</button>
+<button class="w-full h-14 rounded-xl border border-outline-variant text-primary flex items-center justify-center gap-3 hover:bg-surface-container-low transition-colors font-medium">
+<span class="material-symbols-outlined">download</span>
+<span>Save to Gallery</span>
+</button>
+</section>
+<!-- Suggested Reflections -->
+<section class="pt-8 pb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-noto-serif text-lg text-primary">Related Wisdom</h3>
+<button class="text-xs font-bold uppercase tracking-widest text-tertiary">Explore All</button>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 -mx-6 px-6 no-scrollbar">
+<div class="min-w-[240px] p-6 rounded-xl bg-surface-container-low flex flex-col justify-between">
+<p class="font-noto-serif italic text-primary/80 mb-6">"Call upon Me; I will respond to you."</p>
+<span class="text-[10px] font-bold text-outline-variant uppercase tracking-widest">Ghafir 40:60</span>
+</div>
+<div class="min-w-[240px] p-6 rounded-xl bg-surface-container-low flex flex-col justify-between">
+<p class="font-noto-serif italic text-primary/80 mb-6">"Kind words and forgiveness are better..."</p>
+<span class="text-[10px] font-bold text-outline-variant uppercase tracking-widest">Al-Baqarah 2:263</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Suppressed based on Task-Focused rule, but if needed for hierarchy) -->
+<!-- Not rendered per "Task-Focused suppression" rule as this is a detail/customizer screen -->
+<!-- Back to Feed Floating Button (Optional replacement) -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+<button class="custom-glass h-12 px-6 rounded-full border border-outline-variant/30 text-primary flex items-center gap-2 shadow-[0_-4px_24px_rgba(27,28,25,0.04)] hover:scale-105 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-sm">home</span>
+<span class="font-label text-xs uppercase tracking-widest font-bold">Main Majlis</span>
+</button>
+</div>
+</body></html>

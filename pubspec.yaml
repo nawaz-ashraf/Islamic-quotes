@@ -1,0 +1,32 @@
+name: islamic_quotes_app
+description: A spiritually calming Islamic Quotes app with reels-like vertical scrolling.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.5.1
+  shared_preferences: ^2.3.2
+  share_plus: ^10.1.2
+  flutter_local_notifications: ^17.2.3
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/quotes.json
+    - assets/illustrations/peace.svg
+    - assets/illustrations/bookmark.svg
