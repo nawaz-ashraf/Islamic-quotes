@@ -18,7 +18,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
 
   final List<_OnboardingData> _pages = const <_OnboardingData>[
     _OnboardingData(
-      title: 'Welcome to Sakinah',
+      title: 'Welcome to Isalamic Quotes & Reminders',
       description:
           'A spiritually calming space for Islamic reminders, reflection, and daily motivation.',
       illustrationAsset: 'assets/illustrations/peace.svg',
@@ -84,7 +84,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   children: <Widget>[
                     const SizedBox(width: 4),
                     Text(
-                      'Sakinah',
+                      'Islamic Quotes',
                       style: theme.textTheme.headlineMedium
                           ?.copyWith(fontSize: 34),
                     ),
@@ -195,7 +195,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   onPressed: _continue,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
-                    child: Text(isLastPage ? 'Enter Sakinah' : 'Continue'),
+                    child:
+                        Text(isLastPage ? 'Enter Islamic Quotes' : 'Continue'),
                   ),
                 ),
               ),
@@ -207,7 +208,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     await ref
                         .read(onboardingProvider.notifier)
                         .completeOnboarding();
-                    if (!mounted) {
+                    if (!context.mounted) {
                       return;
                     }
                     await Navigator.of(context).pushReplacement(

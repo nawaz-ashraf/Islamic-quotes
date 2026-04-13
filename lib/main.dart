@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/constants/app_constants.dart';
+import 'core/services/ad_service.dart';
 import 'core/services/notification_service.dart';
 import 'core/theme/app_theme.dart';
 import 'data/services/local_storage_service.dart';
@@ -18,6 +19,7 @@ Future<void> main() async {
   final LocalStorageService localStorage = LocalStorageService();
   await localStorage.init();
   await NotificationService.instance.init();
+  await AdService.initialize();
 
   runApp(
     ProviderScope(
@@ -68,9 +70,8 @@ class _AppLaunchGateState extends ConsumerState<AppLaunchGate> {
     }
 
     final bool onboardingComplete = ref.read(onboardingProvider);
-    final Widget destination = onboardingComplete
-        ? const MainShellScreen()
-        : const OnboardingScreen();
+    final Widget destination =
+        onboardingComplete ? const MainShellScreen() : const OnboardingScreen();
 
     await Navigator.of(
       context,

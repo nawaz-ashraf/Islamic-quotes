@@ -19,13 +19,6 @@ class CategoriesScreen extends ConsumerWidget {
     final ThemeData theme = Theme.of(context);
     final QuoteFeedState state = ref.watch(quoteFeedProvider);
 
-    final Map<String, int> counts = <String, int>{
-      for (final String category in AppConstants.categories)
-        category: state.allQuotes
-            .where((Quote quote) => quote.category == category)
-            .length,
-    };
-
     final Quote? featuredQuote =
         state.allQuotes.isNotEmpty ? state.allQuotes.first : null;
 
@@ -109,7 +102,7 @@ class CategoriesScreen extends ConsumerWidget {
                           );
                         },
                         icon: const Icon(Icons.grid_view_rounded),
-                        label: Text('All Quotes (${state.allQuotes.length})'),
+                        label: const Text('All Quotes'),
                       ),
                       const SizedBox(height: 12),
                       GridView.builder(
@@ -129,7 +122,6 @@ class CategoriesScreen extends ConsumerWidget {
 
                           return _CategoryTileWithMeta(
                             visual: item,
-                            quoteCount: counts[item.category] ?? 0,
                             selected: selected,
                             onTap: () {
                               onApplyFilter(item.category);
@@ -159,13 +151,11 @@ class CategoriesScreen extends ConsumerWidget {
 class _CategoryTileWithMeta extends StatelessWidget {
   const _CategoryTileWithMeta({
     required this.visual,
-    required this.quoteCount,
     required this.selected,
     required this.onTap,
   });
 
   final CategoryVisualData visual;
-  final int quoteCount;
   final bool selected;
   final VoidCallback onTap;
 
@@ -191,24 +181,6 @@ class _CategoryTileWithMeta extends StatelessWidget {
               icon: visual.icon,
               imageUrl: visual.imageUrl,
               onTap: onTap,
-            ),
-          ),
-          Positioned(
-            right: 8,
-            bottom: 8,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
-              decoration: BoxDecoration(
-                color: Colors.black.withValues(alpha: 0.45),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                '$quoteCount quotes',
-                style: theme.textTheme.labelSmall?.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
             ),
           ),
           if (selected)

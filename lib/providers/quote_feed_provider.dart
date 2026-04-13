@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../data/models/quote.dart';
@@ -12,6 +14,7 @@ class QuoteFeedState {
     required this.favoriteIds,
     required this.selectedFeedCategory,
     required this.visibleCount,
+    required this.initialFeedIndex,
     required this.isPaging,
   });
 
@@ -22,6 +25,7 @@ class QuoteFeedState {
       favoriteIds: <int>{},
       selectedFeedCategory: null,
       visibleCount: 0,
+      initialFeedIndex: 0,
       isPaging: false,
     );
   }
@@ -31,6 +35,7 @@ class QuoteFeedState {
   final Set<int> favoriteIds;
   final String? selectedFeedCategory;
   final int visibleCount;
+  final int initialFeedIndex;
   final bool isPaging;
 
   List<Quote> get _filteredQuotes {
@@ -65,6 +70,7 @@ class QuoteFeedState {
     String? selectedFeedCategory,
     bool clearSelectedCategory = false,
     int? visibleCount,
+    int? initialFeedIndex,
     bool? isPaging,
   }) {
     return QuoteFeedState(
@@ -75,6 +81,7 @@ class QuoteFeedState {
           ? null
           : (selectedFeedCategory ?? this.selectedFeedCategory),
       visibleCount: visibleCount ?? this.visibleCount,
+      initialFeedIndex: initialFeedIndex ?? this.initialFeedIndex,
       isPaging: isPaging ?? this.isPaging,
     );
   }
@@ -97,14 +104,21 @@ class QuoteFeedNotifier extends StateNotifier<QuoteFeedState> {
       final List<Quote> loadedQuotes = await _repository.loadQuotes();
       final Set<int> favorites = _storage.favoriteQuoteIds;
 
+      final int randomInitialIndex =
+          loadedQuotes.isEmpty ? 0 : Random().nextInt(loadedQuotes.length);
+
       final int initialCount =
           loadedQuotes.length < _pageSize ? loadedQuotes.length : _pageSize;
+      final int adjustedInitialCount = (randomInitialIndex + 1) > initialCount
+          ? (randomInitialIndex + 1)
+          : initialCount;
 
       state = state.copyWith(
         isLoading: false,
         allQuotes: loadedQuotes,
         favoriteIds: favorites,
-        visibleCount: initialCount,
+        visibleCount: adjustedInitialCount,
+        initialFeedIndex: randomInitialIndex,
       );
     } catch (_) {
       state = state.copyWith(isLoading: false);

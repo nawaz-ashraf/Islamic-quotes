@@ -1,4 +1,4 @@
-# Sakinah (Flutter)
+# Islamic Quotes (Flutter)
 
 A production-style Flutter Android app with a full-screen vertical quote feed inspired by reels UX, designed for a calm Islamic reading experience.
 

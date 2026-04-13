@@ -8,8 +8,6 @@ class QuoteCard extends StatelessWidget {
     required this.quote,
     required this.isFavorite,
     required this.onFavorite,
-    required this.onCopy,
-    required this.onShare,
     required this.onTap,
     required this.onLongPress,
     super.key,
@@ -18,10 +16,25 @@ class QuoteCard extends StatelessWidget {
   final Quote quote;
   final bool isFavorite;
   final VoidCallback onFavorite;
-  final VoidCallback onCopy;
-  final VoidCallback onShare;
   final VoidCallback onTap;
   final VoidCallback onLongPress;
+
+  bool _shouldShowSource(String source) {
+    final String normalized =
+        source.toLowerCase().replaceAll(RegExp(r'\s+'), ' ').trim();
+
+    if (normalized.isEmpty) {
+      return false;
+    }
+
+    // Feed UX: hide the auto-generated attribution label.
+    if (normalized == 'general islamic reminder' ||
+        normalized == 'general islamic remainder') {
+      return false;
+    }
+
+    return true;
+  }
 
   List<Color> _gradientForCategory(String category, bool dark) {
     switch (category) {
@@ -56,6 +69,8 @@ class QuoteCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
     final bool isDark = theme.brightness == Brightness.dark;
+    final String source = quote.source.trim();
+    final bool showSource = _shouldShowSource(source);
 
     return Container(
       decoration: BoxDecoration(
@@ -131,70 +146,71 @@ class QuoteCard extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Expanded(
-                          child: SingleChildScrollView(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.format_quote_rounded,
-                                  size: compact ? 32 : 40,
-                                  color: theme.colorScheme.primary
-                                      .withValues(alpha: 0.65),
-                                ),
-                                const SizedBox(height: 6),
-                                Text(
-                                  quote.textEn,
-                                  style:
-                                      theme.textTheme.headlineMedium?.copyWith(
-                                    fontSize: quoteFontSize,
-                                    height: 1.16,
+                          child: LayoutBuilder(
+                            builder: (BuildContext context,
+                                BoxConstraints constraints) {
+                              return SingleChildScrollView(
+                                child: ConstrainedBox(
+                                  constraints: BoxConstraints(
+                                    minHeight: constraints.maxHeight,
                                   ),
-                                ),
-                                const SizedBox(height: 12),
-                                Directionality(
-                                  textDirection: TextDirection.rtl,
-                                  child: Align(
-                                    alignment: Alignment.centerRight,
-                                    child: Text(
-                                      quote.textUr,
-                                      textAlign: TextAlign.right,
-                                      style: urduStyle,
+                                  child: Center(
+                                    child: SizedBox(
+                                      width: double.infinity,
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Icon(
+                                            Icons.format_quote_rounded,
+                                            size: compact ? 32 : 40,
+                                            color: theme.colorScheme.primary
+                                                .withValues(alpha: 0.65),
+                                          ),
+                                          const SizedBox(height: 6),
+                                          Text(
+                                            quote.textEn,
+                                            style: theme
+                                                .textTheme.headlineMedium
+                                                ?.copyWith(
+                                              fontSize: quoteFontSize,
+                                              height: 1.16,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 12),
+                                          Directionality(
+                                            textDirection: TextDirection.rtl,
+                                            child: Align(
+                                              alignment: Alignment.centerRight,
+                                              child: Text(
+                                                quote.textUr,
+                                                textAlign: TextAlign.right,
+                                                style: urduStyle,
+                                              ),
+                                            ),
+                                          ),
+                                          if (showSource) ...<Widget>[
+                                            const SizedBox(height: 18),
+                                            Text(
+                                              source,
+                                              style: theme.textTheme.titleMedium
+                                                  ?.copyWith(
+                                                fontSize: compact ? 14 : 15,
+                                              ),
+                                            ),
+                                            const SizedBox(height: 4),
+                                          ] else ...<Widget>[
+                                            const SizedBox(height: 8),
+                                          ],
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
-                                const SizedBox(height: 18),
-                                Text(
-                                  quote.source,
-                                  style: theme.textTheme.titleMedium?.copyWith(
-                                    fontSize: compact ? 14 : 15,
-                                  ),
-                                ),
-                              ],
-                            ),
+                              );
+                            },
                           ),
-                        ),
-                        const SizedBox(height: 10),
-                        Wrap(
-                          spacing: 10,
-                          runSpacing: 8,
-                          alignment: WrapAlignment.end,
-                          children: <Widget>[
-                            _MiniAction(
-                              icon: Icons.copy_rounded,
-                              label: 'Copy',
-                              onTap: onCopy,
-                            ),
-                            _MiniAction(
-                              icon: Icons.share_rounded,
-                              label: 'Share',
-                              onTap: onShare,
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Tap for details • Long-press for quick actions • Swipe for next',
-                          style: theme.textTheme.bodySmall,
                         ),
                       ],
                     ),
@@ -204,27 +220,6 @@ class QuoteCard extends StatelessWidget {
             },
           ),
         ),
-      ),
-    );
-  }
-}
-
-class _MiniAction extends StatelessWidget {
-  const _MiniAction(
-      {required this.icon, required this.label, required this.onTap});
-
-  final IconData icon;
-  final String label;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return FilledButton.tonalIcon(
-      onPressed: onTap,
-      icon: Icon(icon, size: 18),
-      label: Text(label),
-      style: FilledButton.styleFrom(
-        visualDensity: VisualDensity.compact,
       ),
     );
   }

@@ -1,65 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:share_plus/share_plus.dart';
 
 import '../data/models/quote.dart';
 import '../providers/quote_feed_provider.dart';
-import '../widgets/quote_detail_overlay.dart';
 
-class FavoritesScreen extends ConsumerStatefulWidget {
+class FavoritesScreen extends ConsumerWidget {
   const FavoritesScreen({super.key});
 
   @override
-  ConsumerState<FavoritesScreen> createState() => _FavoritesScreenState();
-}
-
-class _FavoritesScreenState extends ConsumerState<FavoritesScreen> {
-  Future<void> _copyQuote(Quote quote) async {
-    await Clipboard.setData(ClipboardData(text: quote.shareBody));
-    if (!mounted) {
-      return;
-    }
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Quote copied to clipboard.')),
-    );
-  }
-
-  Future<void> _shareQuote(Quote quote) {
-    return Share.share(quote.shareBody);
-  }
-
-  void _openDetail(Quote quote, bool isFavorite) {
-    showModalBottomSheet<void>(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (_) => QuoteDetailOverlay(
-        quote: quote,
-        isFavorite: isFavorite,
-        onFavorite: () =>
-            ref.read(quoteFeedProvider.notifier).toggleFavorite(quote.id),
-        onCopy: () => _copyQuote(quote),
-        onShare: () => _shareQuote(quote),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final ThemeData theme = Theme.of(context);
     final ColorScheme scheme = theme.colorScheme;
     final TextStyle urduStyle = GoogleFonts.getFont(
       'Noto Nastaliq Urdu',
-      fontSize: 22,
-      height: 1.9,
+      fontSize: 21,
+      height: 1.86,
       fontWeight: FontWeight.w500,
       color: scheme.primary,
     );
     final QuoteFeedState state = ref.watch(quoteFeedProvider);
-    final QuoteFeedNotifier notifier = ref.read(quoteFeedProvider.notifier);
     final List<Quote> favorites = state.favoriteQuotes;
 
     return Scaffold(
@@ -93,80 +53,73 @@ class _FavoritesScreenState extends ConsumerState<FavoritesScreen> {
                 final Quote quote = favorites[index];
 
                 return Card(
-                  margin: const EdgeInsets.fromLTRB(14, 8, 14, 8),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(26),
-                    onTap: () => _openDetail(quote, true),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(14, 14, 14, 12),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 6,
+                  margin: const EdgeInsets.fromLTRB(14, 9, 14, 9),
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 15, 16, 15),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 10,
+                            vertical: 6,
+                          ),
+                          decoration: BoxDecoration(
+                            color:
+                                scheme.primaryContainer.withValues(alpha: 0.75),
+                            borderRadius: BorderRadius.circular(999),
+                          ),
+                          child: Text(
+                            quote.category,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              fontWeight: FontWeight.w700,
                             ),
-                            decoration: BoxDecoration(
-                              color: scheme.primaryContainer
-                                  .withValues(alpha: 0.7),
-                              borderRadius: BorderRadius.circular(999),
-                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 14),
+                        Text(
+                          quote.textEn,
+                          style: theme.textTheme.titleMedium
+                              ?.copyWith(height: 1.4),
+                        ),
+                        const SizedBox(height: 10),
+                        Directionality(
+                          textDirection: TextDirection.rtl,
+                          child: Align(
+                            alignment: Alignment.centerRight,
                             child: Text(
-                              quote.category,
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                fontWeight: FontWeight.w700,
-                              ),
+                              quote.textUr,
+                              textAlign: TextAlign.right,
+                              style: urduStyle,
                             ),
                           ),
-                          const SizedBox(height: 12),
-                          Text(
-                            quote.textEn,
-                            style: theme.textTheme.titleMedium
-                                ?.copyWith(height: 1.4),
+                        ),
+                        const SizedBox(height: 14),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 11,
+                            vertical: 7,
                           ),
-                          const SizedBox(height: 8),
-                          Directionality(
-                            textDirection: TextDirection.rtl,
-                            child: Align(
-                              alignment: Alignment.centerRight,
-                              child: Text(
-                                quote.textUr,
-                                textAlign: TextAlign.right,
-                                style: urduStyle,
-                              ),
-                            ),
+                          decoration: BoxDecoration(
+                            color:
+                                scheme.primaryContainer.withValues(alpha: 0.55),
+                            borderRadius: BorderRadius.circular(999),
                           ),
-                          const SizedBox(height: 10),
-                          Text(
-                            quote.source,
-                            style: theme.textTheme.bodySmall,
-                          ),
-                          const SizedBox(height: 12),
-                          Wrap(
-                            spacing: 8,
-                            runSpacing: 8,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              OutlinedButton.icon(
-                                onPressed: () => _copyQuote(quote),
-                                icon: const Icon(Icons.copy_rounded),
-                                label: const Text('Copy'),
-                              ),
-                              OutlinedButton.icon(
-                                onPressed: () => _shareQuote(quote),
-                                icon: const Icon(Icons.share_rounded),
-                                label: const Text('Share'),
-                              ),
-                              FilledButton.tonalIcon(
-                                onPressed: () =>
-                                    notifier.toggleFavorite(quote.id),
-                                icon: const Icon(Icons.favorite_rounded),
-                                label: const Text('Saved'),
+                              const Text('❤️', style: TextStyle(fontSize: 14)),
+                              const SizedBox(width: 6),
+                              Text(
+                                'Saved',
+                                style: theme.textTheme.labelLarge?.copyWith(
+                                  fontWeight: FontWeight.w700,
+                                ),
                               ),
                             ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 );

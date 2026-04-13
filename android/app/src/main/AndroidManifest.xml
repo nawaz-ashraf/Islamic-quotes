@@ -7,6 +7,10 @@
         android:label="islamic_quotes_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!-- AdMob App ID (production). Debug/profile manifests override this with Google's test ID. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4392358942856616~2605141325" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

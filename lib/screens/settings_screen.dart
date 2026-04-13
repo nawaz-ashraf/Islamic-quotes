@@ -80,7 +80,7 @@ class SettingsScreen extends ConsumerWidget {
             child: ListTile(
               title: Text('About'),
               subtitle: Text(
-                'Sakinah\nA premium offline Islamic quotes app with reels-style feed, favorites, categories, and daily reminders.',
+                'Islamic Quotes\nA premium offline Islamic quotes app with reels-style feed, favorites, categories, and daily reminders.',
               ),
             ),
           ),

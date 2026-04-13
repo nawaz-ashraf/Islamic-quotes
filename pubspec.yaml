@@ -17,6 +17,7 @@ dependencies:
   flutter_local_notifications: ^17.2.3
   google_fonts: ^6.2.1
   flutter_svg: ^2.0.10+1
+  google_mobile_ads: ^5.3.1
 
 dev_dependencies:
   flutter_test:
@@ -30,3 +31,4 @@ flutter:
     - assets/quotes.json
     - assets/illustrations/peace.svg
     - assets/illustrations/bookmark.svg
+    - assets/images/app_logo.png

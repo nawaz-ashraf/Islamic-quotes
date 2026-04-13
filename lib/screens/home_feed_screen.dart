@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../core/services/ad_service.dart';
 import '../data/models/quote.dart';
 import '../providers/quote_feed_provider.dart';
 import '../widgets/quote_actions_sheet.dart';
@@ -19,15 +20,26 @@ class HomeFeedScreen extends ConsumerStatefulWidget {
 }
 
 class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
-  final PageController _pageController = PageController();
+  PageController? _pageController;
   int _lastIndex = 0;
 
   static const double _topOverlayReservedSpace = 56;
 
   @override
   void dispose() {
-    _pageController.dispose();
+    _pageController?.dispose();
     super.dispose();
+  }
+
+  void _ensurePageControllerInitialized(
+      QuoteFeedState state, List<Quote> quotes) {
+    if (_pageController != null || quotes.isEmpty) {
+      return;
+    }
+
+    final int startupIndex = state.initialFeedIndex.clamp(0, quotes.length - 1);
+    _lastIndex = startupIndex;
+    _pageController = PageController(initialPage: startupIndex);
   }
 
   Future<void> _copyQuote(Quote quote) async {
@@ -119,13 +131,17 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
       );
     }
 
+    _ensurePageControllerInitialized(state, quotes);
+
+    final PageController pageController = _pageController!;
+
     return Scaffold(
       body: Stack(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(top: _topOverlayReservedSpace),
             child: PageView.builder(
-              controller: _pageController,
+              controller: pageController,
               scrollDirection: Axis.vertical,
               onPageChanged: (int index) {
                 _lastIndex = index;
@@ -133,6 +149,7 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
                 HapticFeedback.selectionClick();
                 // Pagination preloading: extend the list as user approaches the end.
                 notifier.maybeLoadMore(index);
+                AdService.registerInteraction();
               },
               itemCount: quotes.length,
               itemBuilder: (BuildContext context, int index) {
@@ -143,21 +160,19 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
                   quote: quote,
                   isFavorite: isFavorite,
                   onFavorite: () => notifier.toggleFavorite(quote.id),
-                  onCopy: () => _copyQuote(quote),
-                  onShare: () => _shareQuote(quote),
                   onTap: () => _openDetail(quote, isFavorite),
                   onLongPress: () => _openActions(quote, isFavorite),
                 );
 
                 // Motion polish: subtle scale/opacity based on scroll position.
                 return AnimatedBuilder(
-                  animation: _pageController,
+                  animation: pageController,
                   child: card,
                   builder: (BuildContext context, Widget? child) {
                     double page = _lastIndex.toDouble();
-                    if (_pageController.hasClients &&
-                        _pageController.position.hasContentDimensions) {
-                      page = _pageController.page ?? _lastIndex.toDouble();
+                    if (pageController.hasClients &&
+                        pageController.position.hasContentDimensions) {
+                      page = pageController.page ?? _lastIndex.toDouble();
                     }
 
                     final double delta = (page - index).clamp(-1.0, 1.0);

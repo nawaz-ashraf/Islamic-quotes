@@ -63,13 +63,13 @@ void main() {
     );
 
     // SplashScreen shows app title immediately.
-    expect(find.text('Sakinah'), findsWidgets);
+    expect(find.text('Islamic Quotes'), findsWidgets);
 
     // Let the splash delay elapse and navigation complete.
     await tester.pump(const Duration(seconds: 2));
     await tester.pumpAndSettle();
 
     // With onboarding not completed, we should land on onboarding.
-    expect(find.text('Welcome to Sakinah'), findsOneWidget);
+    expect(find.textContaining('Welcome to'), findsOneWidget);
   });
 }

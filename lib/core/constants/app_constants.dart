@@ -1,7 +1,7 @@
 class AppConstants {
   AppConstants._();
 
-  static const String appName = 'Sakinah';
+  static const String appName = 'Islamic Quotes';
 
   static const String onboardingCompleteKey = 'onboarding_complete';
   static const String favoritesKey = 'favorite_quote_ids';

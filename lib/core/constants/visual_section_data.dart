@@ -53,7 +53,7 @@ class VisualSectionData {
   static const FeaturedBannerData moreBanner = FeaturedBannerData(
     quote:
         'Knowledge without reflection is incomplete, and reflection without action is empty.',
-    source: 'Islamic Reminder',
+    source: 'Featured Wisdom',
     imageUrl:
         'https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1400&q=80',
   );
@@ -168,11 +168,11 @@ class VisualSectionData {
           'https://images.unsplash.com/photo-1504473089979-b1c4993a9653?auto=format&fit=crop&w=900&q=80',
     ),
     MoreVisualData(
-      sectionId: 'quran',
-      title: 'Quran Verses',
-      icon: Icons.menu_book_rounded,
+      sectionId: 'pillars',
+      title: 'Pillars of Islam',
+      icon: Icons.account_balance_rounded,
       imageUrl:
-          'https://images.unsplash.com/photo-1464699908537-0954e50791ee?auto=format&fit=crop&w=900&q=80',
+          'https://images.unsplash.com/photo-1519638399535-1b036603ac77?auto=format&fit=crop&w=900&q=80',
     ),
     MoreVisualData(
       sectionId: 'hadith',
