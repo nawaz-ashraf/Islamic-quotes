@@ -1,0 +1,10 @@
+# Rename this file to: android/key.properties
+# Do NOT commit the real key.properties file.
+#
+# storeFile can be a relative path from the android/ folder.
+# Example below assumes you put your keystore in android/app/key.jks
+
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=upload
+storeFile=app/key.jks
