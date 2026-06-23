@@ -15,7 +15,7 @@
   },
   {
     "id": 3,
-    "text_en": "If you are grateful, I will surely increase you [in favor].",
+    "text_en": "If you are grateful, I will surely increase you in favor.",
     "text_ur": "اگر تم شکر کرو گے تو میں تمہیں ضرور اور زیادہ دوں گا۔",
     "source": "Quran 14:7",
     "category": "Gratitude"
@@ -45,7 +45,7 @@
     "id": 7,
     "text_en": "Actions are judged by intentions.",
     "text_ur": "اعمال کا دارومدار نیتوں پر ہے۔",
-    "source": "Sahih al-Bukhari 1; Sahih Muslim 1907a",
+    "source": "Sahih al-Bukhari 1",
     "category": "Hadith"
   },
   {
@@ -85,16 +85,16 @@
   },
   {
     "id": 13,
-    "text_en": "And whoever relies upon Allah - then He is sufficient for him.",
+    "text_en": "And whoever relies upon Allah, then He is sufficient for him.",
     "text_ur": "اور جو اللہ پر بھروسہ کرے تو وہ اس کے لیے کافی ہے۔",
     "source": "Quran 65:3",
-    "category": "Faith"
+    "category": "Trust in Allah"
   },
   {
     "id": 14,
     "text_en": "Whoever believes in Allah and the Last Day, let him speak good or remain silent.",
     "text_ur": "جو اللہ اور آخرت کے دن پر ایمان رکھتا ہو وہ بھلائی کی بات کرے یا خاموش رہے۔",
-    "source": "Sahih al-Bukhari 6018; Sahih Muslim 47a",
+    "source": "Sahih al-Bukhari 6018",
     "category": "Hadith"
   },
   {
@@ -130,7 +130,7 @@
     "text_en": "Allah is gentle and loves gentleness in all matters.",
     "text_ur": "اللہ نرم ہے اور ہر معاملے میں نرمی کو پسند کرتا ہے۔",
     "source": "Sahih Muslim 2593",
-    "category": "Mercy"
+    "category": "Kindness"
   },
   {
     "id": 20,
@@ -138,5 +138,2315 @@
     "text_ur": "تم میں سب سے بہتر وہ ہے جو قرآن سیکھے اور سکھائے۔",
     "source": "Sahih al-Bukhari 5027",
     "category": "Quran"
+  },
+  {
+    "id": 21,
+    "text_en": "And He found you lost and guided you.",
+    "text_ur": "اور اس نے تمہیں بھٹکا ہوا پایا تو راستہ دکھایا۔",
+    "source": "Quran 93:7",
+    "category": "Faith"
+  },
+  {
+    "id": 22,
+    "text_en": "The strongest among you is the one who controls his anger.",
+    "text_ur": "تم میں سب سے طاقتور وہ ہے جو غصے کے وقت اپنے آپ کو قابو میں رکھے۔",
+    "source": "Sahih al-Bukhari 6114",
+    "category": "Patience"
+  },
+  {
+    "id": 23,
+    "text_en": "Allah does not burden a soul beyond that it can bear.",
+    "text_ur": "اللہ کسی جان کو اس کی طاقت سے زیادہ تکلیف نہیں دیتا۔",
+    "source": "Quran 2:286",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 24,
+    "text_en": "And speak to people with good words.",
+    "text_ur": "اور لوگوں سے اچھی بات کہو۔",
+    "source": "Quran 2:83",
+    "category": "Kindness"
+  },
+  {
+    "id": 25,
+    "text_en": "Whoever does an atom's weight of good will see it.",
+    "text_ur": "جس نے ذرہ برابر نیکی کی ہوگی وہ اسے دیکھ لے گا۔",
+    "source": "Quran 99:7",
+    "category": "Faith"
+  },
+  {
+    "id": 26,
+    "text_en": "The merciful are shown mercy by the Most Merciful.",
+    "text_ur": "رحم کرنے والوں پر رحمٰن رحم فرماتا ہے۔",
+    "source": "Sunan at-Tirmidhi 1924",
+    "category": "Mercy"
+  },
+  {
+    "id": 27,
+    "text_en": "And when My servants ask you about Me, indeed I am near.",
+    "text_ur": "اور جب میرے بندے تم سے میرے بارے میں پوچھیں تو بے شک میں قریب ہوں۔",
+    "source": "Quran 2:186",
+    "category": "Prayer"
+  },
+  {
+    "id": 28,
+    "text_en": "None of you truly believes until he loves for his brother what he loves for himself.",
+    "text_ur": "تم میں سے کوئی اس وقت تک مومن نہیں ہو سکتا جب تک اپنے بھائی کے لیے وہ نہ چاہے جو اپنے لیے چاہتا ہے۔",
+    "source": "Sahih al-Bukhari 13",
+    "category": "Kindness"
+  },
+  {
+    "id": 29,
+    "text_en": "So remember Me, and I will remember you.",
+    "text_ur": "پس تم مجھے یاد کرو میں تمہیں یاد کروں گا۔",
+    "source": "Quran 2:152",
+    "category": "Reflection"
+  },
+  {
+    "id": 30,
+    "text_en": "Every soul shall taste death.",
+    "text_ur": "ہر نفس کو موت کا مزہ چکھنا ہے۔",
+    "source": "Quran 3:185",
+    "category": "Reflection"
+  },
+  {
+    "id": 31,
+    "text_en": "And do good, for Allah loves those who do good.",
+    "text_ur": "اور احسان کرو بے شک اللہ احسان کرنے والوں سے محبت کرتا ہے۔",
+    "source": "Quran 2:195",
+    "category": "Character"
+  },
+  {
+    "id": 32,
+    "text_en": "Take provision, but indeed the best provision is the fear of Allah.",
+    "text_ur": "زادِ راہ لے لو اور بہترین زادِ راہ تقویٰ ہے۔",
+    "source": "Quran 2:197",
+    "category": "Faith"
+  },
+  {
+    "id": 33,
+    "text_en": "A good word is like a good tree whose root is firm and whose branches are in the sky.",
+    "text_ur": "اچھی بات اُس اچھے درخت کی مانند ہے جس کی جڑ مضبوط ہے اور شاخیں آسمان میں ہیں۔",
+    "source": "Quran 14:24",
+    "category": "Character"
+  },
+  {
+    "id": 34,
+    "text_en": "And We have certainly made the Quran easy to remember.",
+    "text_ur": "اور بے شک ہم نے قرآن کو نصیحت کے لیے آسان کر دیا ہے۔",
+    "source": "Quran 54:17",
+    "category": "Quran"
+  },
+  {
+    "id": 35,
+    "text_en": "He who is not merciful to others will not be treated mercifully.",
+    "text_ur": "جو لوگوں پر رحم نہیں کرتا اس پر رحم نہیں کیا جاتا۔",
+    "source": "Sahih al-Bukhari 5997",
+    "category": "Mercy"
+  },
+  {
+    "id": 36,
+    "text_en": "The best of people are those most beneficial to others.",
+    "text_ur": "لوگوں میں سب سے بہتر وہ ہے جو لوگوں کو سب سے زیادہ فائدہ پہنچائے۔",
+    "source": "Sahih al-Jabir",
+    "category": "Kindness"
+  },
+  {
+    "id": 37,
+    "text_en": "Smiling in the face of your brother is an act of charity.",
+    "text_ur": "اپنے بھائی کے سامنے مسکرانا صدقہ ہے۔",
+    "source": "Sunan at-Tirmidhi 1956",
+    "category": "Kindness"
+  },
+  {
+    "id": 38,
+    "text_en": "Whoever is grateful, it is only for the benefit of his own soul.",
+    "text_ur": "اور جو شکر کرتا ہے وہ اپنے ہی فائدے کے لیے شکر کرتا ہے۔",
+    "source": "Quran 31:12",
+    "category": "Gratitude"
+  },
+  {
+    "id": 39,
+    "text_en": "And put your trust in Allah if you are indeed believers.",
+    "text_ur": "اور اللہ پر بھروسہ رکھو اگر تم مومن ہو۔",
+    "source": "Quran 5:23",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 40,
+    "text_en": "He is the First and the Last, the Ascendant and the Intimate.",
+    "text_ur": "وہی اوّل ہے اور آخر ہے، ظاہر ہے اور باطن ہے۔",
+    "source": "Quran 57:3",
+    "category": "Faith"
+  },
+  {
+    "id": 41,
+    "text_en": "And whoever fears Allah, He will make for him a way out.",
+    "text_ur": "اور جو اللہ سے ڈرتا ہے اللہ اس کے لیے نکلنے کا راستہ بنا دیتا ہے۔",
+    "source": "Quran 65:2",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 42,
+    "text_en": "Be patient, for what was written for you was written by the Greatest of Writers.",
+    "text_ur": "صبر کرو کیونکہ جو تمہارے لیے لکھا گیا وہ سب سے بڑے لکھنے والے نے لکھا ہے۔",
+    "source": "Islamic Wisdom",
+    "category": "Patience"
+  },
+  {
+    "id": 43,
+    "text_en": "The supplication is the essence of worship.",
+    "text_ur": "دعا عبادت کا مغز ہے۔",
+    "source": "Sunan at-Tirmidhi 3371",
+    "category": "Prayer"
+  },
+  {
+    "id": 44,
+    "text_en": "Paradise lies at the feet of your mother.",
+    "text_ur": "جنت ماں کے قدموں تلے ہے۔",
+    "source": "Sunan an-Nasa'i 3104",
+    "category": "Character"
+  },
+  {
+    "id": 45,
+    "text_en": "And say: My Lord, increase me in knowledge.",
+    "text_ur": "اور کہو اے میرے رب! میرے علم میں اضافہ فرما۔",
+    "source": "Quran 20:114",
+    "category": "Reflection"
+  },
+  {
+    "id": 46,
+    "text_en": "The world is a prison for the believer and a paradise for the disbeliever.",
+    "text_ur": "دنیا مومن کے لیے قید خانہ ہے اور کافر کے لیے جنت ہے۔",
+    "source": "Sahih Muslim 2956",
+    "category": "Life"
+  },
+  {
+    "id": 47,
+    "text_en": "Wealth is not in having many possessions, but true wealth is the richness of the soul.",
+    "text_ur": "مالداری مال کی کثرت سے نہیں بلکہ حقیقی مالداری دل کی بے نیازی ہے۔",
+    "source": "Sahih al-Bukhari 6446",
+    "category": "Life"
+  },
+  {
+    "id": 48,
+    "text_en": "Give glad tidings to those who are patient.",
+    "text_ur": "صبر کرنے والوں کو خوشخبری دے دو۔",
+    "source": "Quran 2:155",
+    "category": "Patience"
+  },
+  {
+    "id": 49,
+    "text_en": "Indeed, Allah is with those who fear Him and those who do good.",
+    "text_ur": "بے شک اللہ ان لوگوں کے ساتھ ہے جو تقویٰ اختیار کرتے ہیں اور نیکی کرتے ہیں۔",
+    "source": "Quran 16:128",
+    "category": "Faith"
+  },
+  {
+    "id": 50,
+    "text_en": "And He is with you wherever you are.",
+    "text_ur": "اور وہ تمہارے ساتھ ہے جہاں بھی تم ہو۔",
+    "source": "Quran 57:4",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 51,
+    "text_en": "Call upon Me, I will respond to you.",
+    "text_ur": "مجھے پکارو میں تمہاری دعا قبول کروں گا۔",
+    "source": "Quran 40:60",
+    "category": "Prayer"
+  },
+  {
+    "id": 52,
+    "text_en": "And those who strive for Us, We will surely guide them to Our ways.",
+    "text_ur": "اور جو لوگ ہماری راہ میں کوشش کرتے ہیں ہم انہیں اپنے راستے دکھا دیتے ہیں۔",
+    "source": "Quran 29:69",
+    "category": "Faith"
+  },
+  {
+    "id": 53,
+    "text_en": "And it is He who accepts repentance from His servants and pardons misdeeds.",
+    "text_ur": "اور وہی ہے جو اپنے بندوں کی توبہ قبول کرتا ہے اور گناہ معاف کرتا ہے۔",
+    "source": "Quran 42:25",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 54,
+    "text_en": "Make things easy and do not make them difficult.",
+    "text_ur": "آسانی پیدا کرو اور مشکل نہ بناؤ۔",
+    "source": "Sahih al-Bukhari 6125",
+    "category": "Kindness"
+  },
+  {
+    "id": 55,
+    "text_en": "The believer is not stung from the same hole twice.",
+    "text_ur": "مومن ایک سوراخ سے دو بار نہیں ڈسا جاتا۔",
+    "source": "Sahih al-Bukhari 6133",
+    "category": "Life"
+  },
+  {
+    "id": 56,
+    "text_en": "Whoever treads a path in search of knowledge, Allah will make easy for him the path to Paradise.",
+    "text_ur": "جو شخص علم کی تلاش میں کسی راستے پر چلتا ہے اللہ اس کے لیے جنت کا راستہ آسان کر دیتا ہے۔",
+    "source": "Sahih Muslim 2699",
+    "category": "Reflection"
+  },
+  {
+    "id": 57,
+    "text_en": "And He gives you of all that you ask Him. And if you should count the favor of Allah, you could not enumerate them.",
+    "text_ur": "اور اس نے تمہیں ہر وہ چیز دی جو تم نے مانگی اور اگر اللہ کی نعمتیں گنو تو شمار نہ کر سکو گے۔",
+    "source": "Quran 14:34",
+    "category": "Gratitude"
+  },
+  {
+    "id": 58,
+    "text_en": "He who does not thank people does not thank Allah.",
+    "text_ur": "جو لوگوں کا شکریہ ادا نہیں کرتا وہ اللہ کا شکر بھی ادا نہیں کرتا۔",
+    "source": "Sunan Abu Dawud 4811",
+    "category": "Gratitude"
+  },
+  {
+    "id": 59,
+    "text_en": "A Muslim is the one from whose tongue and hands other Muslims are safe.",
+    "text_ur": "مسلمان وہ ہے جس کی زبان اور ہاتھ سے دوسرے مسلمان محفوظ رہیں۔",
+    "source": "Sahih al-Bukhari 10",
+    "category": "Character"
+  },
+  {
+    "id": 60,
+    "text_en": "Leave that which makes you doubt for that which does not make you doubt.",
+    "text_ur": "شک والی چیز چھوڑ دو اور بے شک والی چیز اختیار کرو۔",
+    "source": "Sunan at-Tirmidhi 2518",
+    "category": "Character"
+  },
+  {
+    "id": 61,
+    "text_en": "And the Hereafter is better for you than the first life.",
+    "text_ur": "اور آخرت تمہارے لیے پہلی زندگی سے بہتر ہے۔",
+    "source": "Quran 93:4",
+    "category": "Reflection"
+  },
+  {
+    "id": 62,
+    "text_en": "Allah is beautiful and He loves beauty.",
+    "text_ur": "اللہ خوبصورت ہے اور خوبصورتی کو پسند کرتا ہے۔",
+    "source": "Sahih Muslim 91",
+    "category": "Faith"
+  },
+  {
+    "id": 63,
+    "text_en": "Modesty is a branch of faith.",
+    "text_ur": "حیا ایمان کی ایک شاخ ہے۔",
+    "source": "Sahih al-Bukhari 9",
+    "category": "Character"
+  },
+  {
+    "id": 64,
+    "text_en": "And it may be that you dislike a thing which is good for you.",
+    "text_ur": "اور ہو سکتا ہے کہ تم کسی چیز کو ناپسند کرو حالانکہ وہ تمہارے لیے بہتر ہو۔",
+    "source": "Quran 2:216",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 65,
+    "text_en": "O you who believe, seek help through patience and prayer.",
+    "text_ur": "اے ایمان والو! صبر اور نماز سے مدد چاہو۔",
+    "source": "Quran 2:153",
+    "category": "Prayer"
+  },
+  {
+    "id": 66,
+    "text_en": "And your Lord is the Forgiving, Full of Mercy.",
+    "text_ur": "اور تمہارا رب بخشنے والا، رحمت والا ہے۔",
+    "source": "Quran 18:58",
+    "category": "Mercy"
+  },
+  {
+    "id": 67,
+    "text_en": "The ink of the scholar is more sacred than the blood of the martyr.",
+    "text_ur": "عالم کی سیاہی شہید کے خون سے زیادہ مقدس ہے۔",
+    "source": "Islamic Wisdom",
+    "category": "Reflection"
+  },
+  {
+    "id": 68,
+    "text_en": "And We have sent you not except as a mercy to the worlds.",
+    "text_ur": "اور ہم نے آپ کو نہیں بھیجا مگر تمام جہانوں کے لیے رحمت بنا کر۔",
+    "source": "Quran 21:107",
+    "category": "Mercy"
+  },
+  {
+    "id": 69,
+    "text_en": "Feed the hungry, visit the sick, and set free the captives.",
+    "text_ur": "بھوکے کو کھانا کھلاؤ، بیمار کی عیادت کرو اور قیدی کو آزاد کرو۔",
+    "source": "Sahih al-Bukhari 5649",
+    "category": "Kindness"
+  },
+  {
+    "id": 70,
+    "text_en": "Patience is a pillar of faith.",
+    "text_ur": "صبر ایمان کا ستون ہے۔",
+    "source": "Islamic Wisdom",
+    "category": "Patience"
+  },
+  {
+    "id": 71,
+    "text_en": "Verily, Allah does not look at your appearance or wealth, but He looks at your hearts and deeds.",
+    "text_ur": "بے شک اللہ تمہاری صورتوں اور مالوں کو نہیں دیکھتا بلکہ تمہارے دلوں اور اعمال کو دیکھتا ہے۔",
+    "source": "Sahih Muslim 2564",
+    "category": "Character"
+  },
+  {
+    "id": 72,
+    "text_en": "When you see a person who has been given more than you in wealth and beauty, look to those who have been given less.",
+    "text_ur": "جب تم کسی ایسے شخص کو دیکھو جسے تم سے زیادہ مال و جمال دیا گیا ہو تو اُن کو دیکھو جنہیں کم دیا گیا ہے۔",
+    "source": "Sahih Muslim 2963",
+    "category": "Gratitude"
+  },
+  {
+    "id": 73,
+    "text_en": "And whoever puts his trust in Allah, He will be enough for him.",
+    "text_ur": "اور جو اللہ پر توکل کرے اللہ اسے کافی ہے۔",
+    "source": "Quran 65:3",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 74,
+    "text_en": "The best charity is that given in Ramadan.",
+    "text_ur": "سب سے بہتر صدقہ رمضان میں دیا جانے والا صدقہ ہے۔",
+    "source": "Sunan at-Tirmidhi 663",
+    "category": "Kindness"
+  },
+  {
+    "id": 75,
+    "text_en": "Forgive others and Allah will forgive you.",
+    "text_ur": "دوسروں کو معاف کرو اللہ تمہیں معاف کرے گا۔",
+    "source": "Musnad Ahmad 6541",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 76,
+    "text_en": "And He is the Hearing, the Knowing.",
+    "text_ur": "اور وہ سننے والا جاننے والا ہے۔",
+    "source": "Quran 2:137",
+    "category": "Faith"
+  },
+  {
+    "id": 77,
+    "text_en": "Pray as if it is your last prayer.",
+    "text_ur": "ایسے نماز پڑھو جیسے یہ تمہاری آخری نماز ہو۔",
+    "source": "Islamic Wisdom",
+    "category": "Prayer"
+  },
+  {
+    "id": 78,
+    "text_en": "And Allah is the best of providers.",
+    "text_ur": "اور اللہ سب سے بہتر رزق دینے والا ہے۔",
+    "source": "Quran 62:11",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 79,
+    "text_en": "The most beloved of deeds to Allah are the most consistent even if small.",
+    "text_ur": "اللہ کو سب سے زیادہ محبوب وہ عمل ہے جو مسلسل ہو خواہ تھوڑا ہو۔",
+    "source": "Sahih al-Bukhari 6464",
+    "category": "Reflection"
+  },
+  {
+    "id": 80,
+    "text_en": "Speak the truth even if it is bitter.",
+    "text_ur": "سچ بولو خواہ وہ کڑوا ہو۔",
+    "source": "Musnad Ahmad 22072",
+    "category": "Character"
+  },
+  {
+    "id": 81,
+    "text_en": "He who believes in Allah and the Last Day should honor his guest.",
+    "text_ur": "جو اللہ اور آخرت کے دن پر ایمان رکھتا ہو وہ اپنے مہمان کی عزت کرے۔",
+    "source": "Sahih al-Bukhari 6019",
+    "category": "Hadith"
+  },
+  {
+    "id": 82,
+    "text_en": "Whoever builds a mosque for Allah, Allah will build for him a house in Paradise.",
+    "text_ur": "جو اللہ کے لیے مسجد بنائے اللہ اس کے لیے جنت میں گھر بنائے گا۔",
+    "source": "Sahih al-Bukhari 450",
+    "category": "Prayer"
+  },
+  {
+    "id": 83,
+    "text_en": "This worldly life is nothing but amusement and diversion, but the home of the Hereafter is best for those who fear Allah.",
+    "text_ur": "یہ دنیا کی زندگی تو کھیل تماشا ہے اور آخرت کا گھر ان لوگوں کے لیے بہتر ہے جو تقویٰ اختیار کرتے ہیں۔",
+    "source": "Quran 6:32",
+    "category": "Life"
+  },
+  {
+    "id": 84,
+    "text_en": "And whoever is patient and forgives, indeed that is of the matters requiring resolve.",
+    "text_ur": "اور جو صبر کرے اور معاف کر دے بے شک یہ بڑی ہمت کے کاموں میں سے ہے۔",
+    "source": "Quran 42:43",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 85,
+    "text_en": "A person is on the religion of his close friend, so be careful whom you befriend.",
+    "text_ur": "انسان اپنے دوست کے دین پر ہوتا ہے پس دیکھو کہ کس سے دوستی کرتے ہو۔",
+    "source": "Sunan Abu Dawud 4833",
+    "category": "Life"
+  },
+  {
+    "id": 86,
+    "text_en": "O mankind, indeed We have created you from male and female and made you peoples and tribes so that you may know one another.",
+    "text_ur": "اے لوگو! ہم نے تمہیں ایک مرد اور عورت سے پیدا کیا اور تمہیں قومیں اور قبیلے بنایا تاکہ تم ایک دوسرے کو پہچان سکو۔",
+    "source": "Quran 49:13",
+    "category": "Reflection"
+  },
+  {
+    "id": 87,
+    "text_en": "And do not walk upon the earth arrogantly.",
+    "text_ur": "اور زمین پر تکبر سے نہ چلو۔",
+    "source": "Quran 17:37",
+    "category": "Character"
+  },
+  {
+    "id": 88,
+    "text_en": "Knowledge is the lost property of the believer; he takes it wherever he finds it.",
+    "text_ur": "علم مومن کی گمشدہ چیز ہے جہاں بھی ملے اسے حاصل کرو۔",
+    "source": "Sunan at-Tirmidhi 2687",
+    "category": "Reflection"
+  },
+  {
+    "id": 89,
+    "text_en": "And return to your Lord and submit to Him before the punishment comes upon you.",
+    "text_ur": "اور اپنے رب کی طرف لوٹ آؤ اور اس کے فرمانبردار ہو جاؤ قبل اس کے کہ عذاب آ جائے۔",
+    "source": "Quran 39:54",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 90,
+    "text_en": "The best jihad is to speak a word of truth to an unjust ruler.",
+    "text_ur": "سب سے بہتر جہاد ظالم حاکم کے سامنے حق بات کہنا ہے۔",
+    "source": "Sunan Abu Dawud 4344",
+    "category": "Character"
+  },
+  {
+    "id": 91,
+    "text_en": "And for those who fear Allah, He will make their path easy.",
+    "text_ur": "اور جو اللہ سے ڈرے اللہ اس کا معاملہ آسان کر دے گا۔",
+    "source": "Quran 65:4",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 92,
+    "text_en": "Do not lose hope in the mercy of Allah, for Allah forgives all sins.",
+    "text_ur": "اللہ کی رحمت سے مایوس نہ ہو بے شک اللہ سارے گناہ معاف فرما دیتا ہے۔",
+    "source": "Quran 39:53",
+    "category": "Mercy"
+  },
+  {
+    "id": 93,
+    "text_en": "And We created you in pairs.",
+    "text_ur": "اور ہم نے تمہیں جوڑوں میں پیدا کیا۔",
+    "source": "Quran 78:8",
+    "category": "Reflection"
+  },
+  {
+    "id": 94,
+    "text_en": "The one who guides to something good has a reward similar to that of its doer.",
+    "text_ur": "جو کسی نیکی کی طرف رہنمائی کرے اسے بھی اتنا ہی اجر ملتا ہے جتنا عمل کرنے والے کو۔",
+    "source": "Sahih Muslim 1893",
+    "category": "Kindness"
+  },
+  {
+    "id": 95,
+    "text_en": "Tie your camel and then put your trust in Allah.",
+    "text_ur": "اپنا اونٹ باندھو پھر اللہ پر توکل کرو۔",
+    "source": "Sunan at-Tirmidhi 2517",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 96,
+    "text_en": "Say: He is Allah, the One. Allah, the Eternal Refuge.",
+    "text_ur": "کہو وہ اللہ ایک ہے۔ اللہ بے نیاز ہے۔",
+    "source": "Quran 112:1-2",
+    "category": "Quran"
+  },
+  {
+    "id": 97,
+    "text_en": "And We have certainly honored the children of Adam.",
+    "text_ur": "اور بے شک ہم نے بنی آدم کو عزت بخشی۔",
+    "source": "Quran 17:70",
+    "category": "Faith"
+  },
+  {
+    "id": 98,
+    "text_en": "When the prayer is established, do not come to it running but come walking with tranquility.",
+    "text_ur": "جب نماز کھڑی ہو جائے تو دوڑتے ہوئے نہ آؤ بلکہ سکون سے چل کر آؤ۔",
+    "source": "Sahih al-Bukhari 908",
+    "category": "Prayer"
+  },
+  {
+    "id": 99,
+    "text_en": "Whoever removes a worldly grief from a believer, Allah will remove from him one of the griefs of the Day of Judgment.",
+    "text_ur": "جو کسی مومن کی دنیاوی تکلیف دور کرے اللہ قیامت کے دن اس کی ایک تکلیف دور فرمائے گا۔",
+    "source": "Sahih Muslim 2699",
+    "category": "Kindness"
+  },
+  {
+    "id": 100,
+    "text_en": "Read in the name of your Lord who created.",
+    "text_ur": "پڑھو اپنے رب کے نام سے جس نے پیدا کیا۔",
+    "source": "Quran 96:1",
+    "category": "Quran"
+  },
+  {
+    "id": 101,
+    "text_en": "And those who give what they give while their hearts tremble because they will return to their Lord.",
+    "text_ur": "اور جو لوگ دیتے ہیں جو دیتے ہیں اور ان کے دل ڈرتے رہتے ہیں کیونکہ وہ اپنے رب کی طرف لوٹنے والے ہیں۔",
+    "source": "Quran 23:60",
+    "category": "Faith"
+  },
+  {
+    "id": 102,
+    "text_en": "O you who believe, fasting is prescribed for you as it was prescribed for those before you.",
+    "text_ur": "اے ایمان والو! تم پر روزے فرض کیے گئے جیسے تم سے پہلے لوگوں پر فرض کیے گئے تھے۔",
+    "source": "Quran 2:183",
+    "category": "Prayer"
+  },
+  {
+    "id": 103,
+    "text_en": "Part of the perfection of a person's Islam is leaving that which does not concern him.",
+    "text_ur": "آدمی کے اسلام کی خوبی یہ ہے کہ وہ فضول باتیں چھوڑ دے۔",
+    "source": "Sunan at-Tirmidhi 2317",
+    "category": "Character"
+  },
+  {
+    "id": 104,
+    "text_en": "Truly in the body there is a piece of flesh which if it is healthy the whole body is healthy, and if it is sick the whole body is sick. Truly it is the heart.",
+    "text_ur": "بے شک جسم میں گوشت کا ایک ٹکڑا ہے اگر وہ درست ہو تو سارا جسم درست ہوتا ہے اور اگر وہ خراب ہو تو سارا جسم خراب ہوتا ہے یاد رکھو وہ دل ہے۔",
+    "source": "Sahih al-Bukhari 52",
+    "category": "Hadith"
+  },
+  {
+    "id": 105,
+    "text_en": "And among His signs is that He created for you mates from among yourselves that you may find peace in them.",
+    "text_ur": "اور اس کی نشانیوں میں سے یہ ہے کہ اس نے تمہارے لیے تمہاری ہی جنس سے جوڑے بنائے تاکہ تم ان سے سکون حاصل کرو۔",
+    "source": "Quran 30:21",
+    "category": "Life"
+  },
+  {
+    "id": 106,
+    "text_en": "And be moderate in your pace and lower your voice.",
+    "text_ur": "اور اپنی چال میں اعتدال رکھو اور اپنی آواز نیچی رکھو۔",
+    "source": "Quran 31:19",
+    "category": "Character"
+  },
+  {
+    "id": 107,
+    "text_en": "No fatigue, nor disease, nor sorrow befalls a Muslim but that Allah will expiate some of his sins.",
+    "text_ur": "مسلمان کو جو تھکاوٹ، بیماری یا غم پہنچتا ہے اللہ اس کے بدلے اس کے گناہ معاف کر دیتا ہے۔",
+    "source": "Sahih al-Bukhari 5641",
+    "category": "Patience"
+  },
+  {
+    "id": 108,
+    "text_en": "And consult them in the matter.",
+    "text_ur": "اور معاملات میں ان سے مشورہ کرو۔",
+    "source": "Quran 3:159",
+    "category": "Life"
+  },
+  {
+    "id": 109,
+    "text_en": "Give charity without delay, for it stands in the way of calamity.",
+    "text_ur": "صدقہ دینے میں تاخیر نہ کرو کیونکہ یہ مصیبت کے راستے میں کھڑا ہو جاتا ہے۔",
+    "source": "Sunan at-Tirmidhi 589",
+    "category": "Kindness"
+  },
+  {
+    "id": 110,
+    "text_en": "Whoever goes to bed at night with a clean heart toward others has truly found peace.",
+    "text_ur": "جو رات کو صاف دل لے کر سوئے اس نے حقیقی سکون پا لیا۔",
+    "source": "Islamic Wisdom",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 111,
+    "text_en": "And the servants of the Most Merciful are those who walk upon the earth humbly.",
+    "text_ur": "اور رحمٰن کے بندے وہ ہیں جو زمین پر عاجزی سے چلتے ہیں۔",
+    "source": "Quran 25:63",
+    "category": "Character"
+  },
+  {
+    "id": 112,
+    "text_en": "Indeed, the patient will be given their reward without account.",
+    "text_ur": "بے شک صبر کرنے والوں کو بے حساب اجر دیا جائے گا۔",
+    "source": "Quran 39:10",
+    "category": "Patience"
+  },
+  {
+    "id": 113,
+    "text_en": "He who wakes up safely in his home, healthy in his body, having his daily food, has the whole world.",
+    "text_ur": "جو شخص اپنے گھر میں محفوظ صبح کرے، جسم تندرست ہو اور اس کے پاس ایک دن کا کھانا ہو تو گویا اسے ساری دنیا مل گئی۔",
+    "source": "Sunan at-Tirmidhi 2346",
+    "category": "Gratitude"
+  },
+  {
+    "id": 114,
+    "text_en": "And for those who fear the standing before their Lord are two gardens.",
+    "text_ur": "اور جو اپنے رب کے سامنے کھڑے ہونے سے ڈرے اس کے لیے دو جنتیں ہیں۔",
+    "source": "Quran 55:46",
+    "category": "Hope"
+  },
+  {
+    "id": 115,
+    "text_en": "Beware of jealousy, for it devours good deeds as fire devours wood.",
+    "text_ur": "حسد سے بچو کیونکہ یہ نیکیوں کو ایسے کھا جاتا ہے جیسے آگ لکڑی کو۔",
+    "source": "Sunan Abu Dawud 4903",
+    "category": "Character"
+  },
+  {
+    "id": 116,
+    "text_en": "And those who control their anger and pardon the people, Allah loves the doers of good.",
+    "text_ur": "اور غصہ پینے والے اور لوگوں کو معاف کرنے والے اللہ نیکی کرنے والوں سے محبت کرتا ہے۔",
+    "source": "Quran 3:134",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 117,
+    "text_en": "Every act of kindness is a charity.",
+    "text_ur": "ہر نیکی صدقہ ہے۔",
+    "source": "Sahih al-Bukhari 6021",
+    "category": "Kindness"
+  },
+  {
+    "id": 118,
+    "text_en": "And rely upon the Ever-Living who does not die.",
+    "text_ur": "اور اس ہمیشہ زندہ رہنے والے پر بھروسہ کرو جو کبھی نہیں مرتا۔",
+    "source": "Quran 25:58",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 119,
+    "text_en": "And in the heaven is your provision and whatever you are promised.",
+    "text_ur": "اور آسمان میں تمہارا رزق ہے اور جو کچھ تم سے وعدہ کیا جاتا ہے۔",
+    "source": "Quran 51:22",
+    "category": "Hope"
+  },
+  {
+    "id": 120,
+    "text_en": "The most complete of the believers in faith is the one with the best character.",
+    "text_ur": "مومنوں میں سب سے کامل ایمان والا وہ ہے جس کے اخلاق سب سے اچھے ہوں۔",
+    "source": "Sunan Abu Dawud 4682",
+    "category": "Character"
+  },
+  {
+    "id": 121,
+    "text_en": "This too shall pass, so be patient with the decree of your Lord.",
+    "text_ur": "یہ بھی گزر جائے گا پس اپنے رب کے فیصلے پر صبر کرو۔",
+    "source": "Islamic Wisdom",
+    "category": "Patience"
+  },
+  {
+    "id": 122,
+    "text_en": "And whoever saves a life, it is as if he has saved all of mankind.",
+    "text_ur": "اور جس نے ایک جان بچائی گویا اس نے تمام انسانوں کو بچا لیا۔",
+    "source": "Quran 5:32",
+    "category": "Kindness"
+  },
+  {
+    "id": 123,
+    "text_en": "Hasten to forgiveness from your Lord and a garden as wide as the heavens and earth.",
+    "text_ur": "اپنے رب کی مغفرت کی طرف دوڑو اور اس جنت کی طرف جس کی چوڑائی آسمانوں اور زمین جتنی ہے۔",
+    "source": "Quran 3:133",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 124,
+    "text_en": "And worship your Lord until there comes to you the certainty of death.",
+    "text_ur": "اور اپنے رب کی عبادت کرو یہاں تک کہ تمہیں موت آ جائے۔",
+    "source": "Quran 15:99",
+    "category": "Prayer"
+  },
+  {
+    "id": 125,
+    "text_en": "The one who plants a tree and patiently waits for it to bear fruit has the reward of charity.",
+    "text_ur": "جو درخت لگائے اور صبر سے اس کے پھل کا انتظار کرے اسے صدقے کا اجر ملتا ہے۔",
+    "source": "Sahih Muslim 1553",
+    "category": "Patience"
+  },
+  {
+    "id": 126,
+    "text_en": "Allah does not change the condition of a people until they change what is in themselves.",
+    "text_ur": "اللہ کسی قوم کی حالت نہیں بدلتا جب تک وہ خود اپنے آپ کو نہ بدلیں۔",
+    "source": "Quran 13:11",
+    "category": "Reflection"
+  },
+  {
+    "id": 127,
+    "text_en": "And hold firmly to the rope of Allah all together and do not become divided.",
+    "text_ur": "اور سب مل کر اللہ کی رسی کو مضبوطی سے تھام لو اور تفرقے میں نہ پڑو۔",
+    "source": "Quran 3:103",
+    "category": "Faith"
+  },
+  {
+    "id": 128,
+    "text_en": "Whoever is deprived of gentleness is deprived of all good.",
+    "text_ur": "جو نرمی سے محروم ہو وہ تمام خیر سے محروم ہے۔",
+    "source": "Sahih Muslim 2592",
+    "category": "Kindness"
+  },
+  {
+    "id": 129,
+    "text_en": "The two feet of the son of Adam will not move on the Day of Judgment until he is asked about his life and how he spent it.",
+    "text_ur": "قیامت کے دن ابنِ آدم کے دونوں قدم نہیں ہلیں گے جب تک اس سے اس کی زندگی کے بارے میں نہ پوچھا جائے۔",
+    "source": "Sunan at-Tirmidhi 2417",
+    "category": "Reflection"
+  },
+  {
+    "id": 130,
+    "text_en": "And whatever strikes you of disaster, it is for what your hands have earned, but He pardons much.",
+    "text_ur": "اور جو مصیبت تمہیں پہنچتی ہے وہ تمہارے اپنے ہاتھوں کی کمائی ہے اور وہ بہت سی باتیں معاف کر دیتا ہے۔",
+    "source": "Quran 42:30",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 131,
+    "text_en": "Seek knowledge from the cradle to the grave.",
+    "text_ur": "علم حاصل کرو گہوارے سے لے کر قبر تک۔",
+    "source": "Islamic Wisdom",
+    "category": "Reflection"
+  },
+  {
+    "id": 132,
+    "text_en": "And to Allah belongs the east and the west. So wherever you turn, there is the face of Allah.",
+    "text_ur": "اور مشرق و مغرب اللہ ہی کے ہیں پس تم جدھر بھی رخ کرو وہاں اللہ کا رخ ہے۔",
+    "source": "Quran 2:115",
+    "category": "Faith"
+  },
+  {
+    "id": 133,
+    "text_en": "Lower your wing of humility to the believers.",
+    "text_ur": "مومنوں کے لیے اپنی عاجزی کا بازو جھکا دو۔",
+    "source": "Quran 15:88",
+    "category": "Character"
+  },
+  {
+    "id": 134,
+    "text_en": "Richness is not having many possessions; richness is self-contentment.",
+    "text_ur": "امیری مال کی زیادتی نہیں بلکہ امیری دل کی بے نیازی ہے۔",
+    "source": "Sahih al-Bukhari 6446",
+    "category": "Gratitude"
+  },
+  {
+    "id": 135,
+    "text_en": "And those who believe are stronger in love for Allah.",
+    "text_ur": "اور جو ایمان لائے وہ اللہ سے بہت زیادہ محبت کرتے ہیں۔",
+    "source": "Quran 2:165",
+    "category": "Faith"
+  },
+  {
+    "id": 136,
+    "text_en": "Guard your prayers and the middle prayer and stand before Allah in devotion.",
+    "text_ur": "نمازوں کی حفاظت کرو خصوصاً درمیانی نماز کی اور اللہ کے سامنے ادب سے کھڑے ہو۔",
+    "source": "Quran 2:238",
+    "category": "Prayer"
+  },
+  {
+    "id": 137,
+    "text_en": "Tying the bonds of kinship increases your lifespan and expands your provision.",
+    "text_ur": "صلہ رحمی عمر میں اضافہ اور رزق میں کشادگی لاتی ہے۔",
+    "source": "Sahih al-Bukhari 5986",
+    "category": "Kindness"
+  },
+  {
+    "id": 138,
+    "text_en": "And We will surely test you with something of fear and hunger and a loss of wealth and lives and fruits, but give good tidings to the patient.",
+    "text_ur": "اور ہم ضرور تمہیں خوف، بھوک، مال، جانوں اور پھلوں کے نقصان سے آزمائیں گے اور صبر کرنے والوں کو خوشخبری دے دو۔",
+    "source": "Quran 2:155",
+    "category": "Patience"
+  },
+  {
+    "id": 139,
+    "text_en": "And cooperate in righteousness and piety, but do not cooperate in sin and aggression.",
+    "text_ur": "نیکی اور تقویٰ میں ایک دوسرے کی مدد کرو اور گناہ اور زیادتی میں مدد نہ کرو۔",
+    "source": "Quran 5:2",
+    "category": "Character"
+  },
+  {
+    "id": 140,
+    "text_en": "The hand that gives is better than the hand that receives.",
+    "text_ur": "دینے والا ہاتھ لینے والے ہاتھ سے بہتر ہے۔",
+    "source": "Sahih al-Bukhari 1427",
+    "category": "Kindness"
+  },
+  {
+    "id": 141,
+    "text_en": "And your Lord is most forgiving, owner of mercy.",
+    "text_ur": "اور تمہارا رب بہت بخشنے والا، بہت رحم والا ہے۔",
+    "source": "Quran 18:58",
+    "category": "Mercy"
+  },
+  {
+    "id": 142,
+    "text_en": "Indeed those who recite the Book of Allah and establish prayer have made an exchange with Allah that will never perish.",
+    "text_ur": "بے شک جو لوگ اللہ کی کتاب پڑھتے ہیں اور نماز قائم کرتے ہیں انہوں نے ایسی تجارت کی جو کبھی خسارے میں نہیں جائے گی۔",
+    "source": "Quran 35:29",
+    "category": "Quran"
+  },
+  {
+    "id": 143,
+    "text_en": "Repel evil with that which is better, and the one who was your enemy will become your close friend.",
+    "text_ur": "برائی کو بھلائی سے دور کرو تو جو تمہارا دشمن تھا وہ قریبی دوست بن جائے گا۔",
+    "source": "Quran 41:34",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 144,
+    "text_en": "Do not be sad; indeed Allah is with us.",
+    "text_ur": "غم نہ کرو بے شک اللہ ہمارے ساتھ ہے۔",
+    "source": "Quran 9:40",
+    "category": "Hope"
+  },
+  {
+    "id": 145,
+    "text_en": "And He provides for him from sources he could never imagine.",
+    "text_ur": "اور اسے ایسی جگہ سے رزق دیتا ہے جہاں سے اسے گمان بھی نہ ہو۔",
+    "source": "Quran 65:3",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 146,
+    "text_en": "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended.",
+    "text_ur": "اعمال کا دارومدار نیتوں پر ہے اور ہر شخص کو وہی ملے گا جس کی اس نے نیت کی۔",
+    "source": "Sahih al-Bukhari 1",
+    "category": "Hadith"
+  },
+  {
+    "id": 147,
+    "text_en": "Blessed is He in whose hand is the dominion and He is over all things competent.",
+    "text_ur": "بابرکت ہے وہ جس کے ہاتھ میں بادشاہی ہے اور وہ ہر چیز پر قادر ہے۔",
+    "source": "Quran 67:1",
+    "category": "Faith"
+  },
+  {
+    "id": 148,
+    "text_en": "And spend in the way of Allah and do not throw yourselves into destruction by your own hands.",
+    "text_ur": "اور اللہ کی راہ میں خرچ کرو اور اپنے ہاتھوں سے اپنے آپ کو ہلاکت میں نہ ڈالو۔",
+    "source": "Quran 2:195",
+    "category": "Life"
+  },
+  {
+    "id": 149,
+    "text_en": "Your smile for your brother is charity.",
+    "text_ur": "اپنے بھائی کے لیے تمہاری مسکراہٹ صدقہ ہے۔",
+    "source": "Sunan at-Tirmidhi 1956",
+    "category": "Kindness"
+  },
+  {
+    "id": 150,
+    "text_en": "And We have not created the heavens and earth and that between them except in truth.",
+    "text_ur": "اور ہم نے آسمانوں اور زمین اور جو کچھ ان کے درمیان ہے سب کو حق کے ساتھ پیدا کیا۔",
+    "source": "Quran 15:85",
+    "category": "Reflection"
+  },
+  {
+    "id": 151,
+    "text_en": "It is not righteousness that you turn your faces toward the east or the west, but true righteousness is in one who believes in Allah.",
+    "text_ur": "نیکی یہ نہیں کہ اپنا رخ مشرق یا مغرب کی طرف کرو بلکہ حقیقی نیکی وہ ہے جو اللہ پر ایمان لائے۔",
+    "source": "Quran 2:177",
+    "category": "Faith"
+  },
+  {
+    "id": 152,
+    "text_en": "Take from their wealth a charity by which you purify them and cause them increase.",
+    "text_ur": "ان کے مال میں سے صدقہ لو جس سے تم انہیں پاک کرو اور انہیں بڑھاؤ۔",
+    "source": "Quran 9:103",
+    "category": "Gratitude"
+  },
+  {
+    "id": 153,
+    "text_en": "And Allah invites to the home of peace.",
+    "text_ur": "اور اللہ سلامتی کے گھر کی طرف بلاتا ہے۔",
+    "source": "Quran 10:25",
+    "category": "Hope"
+  },
+  {
+    "id": 154,
+    "text_en": "A white man has no superiority over a black man except by piety and good action.",
+    "text_ur": "کسی گورے کو کالے پر کوئی فضیلت نہیں سوائے تقویٰ اور نیک عمل کے۔",
+    "source": "Musnad Ahmad 23489",
+    "category": "Character"
+  },
+  {
+    "id": 155,
+    "text_en": "And Allah is Seeing of what you do.",
+    "text_ur": "اور اللہ تمہارے اعمال دیکھ رہا ہے۔",
+    "source": "Quran 2:265",
+    "category": "Reflection"
+  },
+  {
+    "id": 156,
+    "text_en": "My Lord, make me an establisher of prayer, and many from my descendants.",
+    "text_ur": "اے میرے رب! مجھے نماز قائم کرنے والا بنا اور میری اولاد میں سے بھی۔",
+    "source": "Quran 14:40",
+    "category": "Prayer"
+  },
+  {
+    "id": 157,
+    "text_en": "Righteousness is good character, and sin is what wavers in your heart and you dislike that people find out about it.",
+    "text_ur": "نیکی اچھے اخلاق کا نام ہے اور گناہ وہ ہے جو تمہارے دل میں کھٹکے اور تم ناپسند کرو کہ لوگوں کو اس کا پتا چلے۔",
+    "source": "Sahih Muslim 2553",
+    "category": "Hadith"
+  },
+  {
+    "id": 158,
+    "text_en": "And whoever does a wrong or wrongs himself but then seeks forgiveness of Allah will find Allah Forgiving and Merciful.",
+    "text_ur": "اور جو کوئی برائی کرے یا اپنے آپ پر ظلم کرے پھر اللہ سے مغفرت طلب کرے تو وہ اللہ کو بخشنے والا مہربان پائے گا۔",
+    "source": "Quran 4:110",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 159,
+    "text_en": "And the life of this world is nothing but play and amusement. But far better is the house in the Hereafter for those who are righteous.",
+    "text_ur": "اور دنیا کی زندگی کھیل تماشے کے سوا کچھ نہیں اور آخرت کا گھر پرہیزگاروں کے لیے بہت بہتر ہے۔",
+    "source": "Quran 6:32",
+    "category": "Life"
+  },
+  {
+    "id": 160,
+    "text_en": "So verily, with the hardship, there is relief. Verily, with the hardship, there is relief.",
+    "text_ur": "پس بے شک مشکل کے ساتھ آسانی ہے۔ بے شک مشکل کے ساتھ آسانی ہے۔",
+    "source": "Quran 94:5-6",
+    "category": "Hope"
+  },
+  {
+    "id": 161,
+    "text_en": "And hold firmly together and do not become scattered.",
+    "text_ur": "مل جل کر رہو اور تفرقے میں نہ پڑو۔",
+    "source": "Quran 3:103",
+    "category": "Life"
+  },
+  {
+    "id": 162,
+    "text_en": "Beware of suspicion, for suspicion is the most false form of speech.",
+    "text_ur": "بدگمانی سے بچو کیونکہ بدگمانی سب سے جھوٹی بات ہے۔",
+    "source": "Sahih al-Bukhari 6064",
+    "category": "Character"
+  },
+  {
+    "id": 163,
+    "text_en": "To Allah we belong and to Him we shall return.",
+    "text_ur": "ہم اللہ کے ہیں اور اسی کی طرف لوٹنے والے ہیں۔",
+    "source": "Quran 2:156",
+    "category": "Faith"
+  },
+  {
+    "id": 164,
+    "text_en": "The best of you are those who are best to their families.",
+    "text_ur": "تم میں سب سے بہتر وہ ہے جو اپنے گھر والوں کے ساتھ بہتر ہے۔",
+    "source": "Sunan at-Tirmidhi 3895",
+    "category": "Life"
+  },
+  {
+    "id": 165,
+    "text_en": "O Allah, You are the Most Forgiving and You love to forgive, so forgive me.",
+    "text_ur": "اے اللہ تو معاف کرنے والا ہے اور معاف کرنا پسند کرتا ہے پس مجھے معاف فرما دے۔",
+    "source": "Sunan at-Tirmidhi 3513",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 166,
+    "text_en": "And those who have believed and whose hearts are assured by the remembrance of Allah.",
+    "text_ur": "اور جو ایمان لائے اور ان کے دل اللہ کے ذکر سے مطمئن ہوتے ہیں۔",
+    "source": "Quran 13:28",
+    "category": "Faith"
+  },
+  {
+    "id": 167,
+    "text_en": "He created the heavens and earth in truth and formed you and perfected your forms.",
+    "text_ur": "اس نے آسمانوں اور زمین کو حق کے ساتھ بنایا اور تمہاری صورت بنائی اور اچھی صورت بنائی۔",
+    "source": "Quran 64:3",
+    "category": "Gratitude"
+  },
+  {
+    "id": 168,
+    "text_en": "And be steadfast in prayer; practice regular charity; and bow down your heads with those who bow down.",
+    "text_ur": "نماز قائم کرو زکوٰۃ دو اور رکوع کرنے والوں کے ساتھ رکوع کرو۔",
+    "source": "Quran 2:43",
+    "category": "Prayer"
+  },
+  {
+    "id": 169,
+    "text_en": "And among people are those who give their life seeking the pleasure of Allah.",
+    "text_ur": "اور لوگوں میں وہ بھی ہیں جو اللہ کی رضا کے لیے اپنی جان دے دیتے ہیں۔",
+    "source": "Quran 2:207",
+    "category": "Faith"
+  },
+  {
+    "id": 170,
+    "text_en": "Indeed, the righteous will be in gardens and rivers.",
+    "text_ur": "بے شک متقی لوگ باغوں اور نہروں میں ہوں گے۔",
+    "source": "Quran 54:54",
+    "category": "Hope"
+  },
+  {
+    "id": 171,
+    "text_en": "And the earth We spread out, and placed therein firm mountains, and caused to grow therein everything in balance.",
+    "text_ur": "اور زمین کو ہم نے پھیلایا اور اس میں پہاڑ رکھے اور اس میں ہر چیز اندازے کے مطابق اگائی۔",
+    "source": "Quran 15:19",
+    "category": "Reflection"
+  },
+  {
+    "id": 172,
+    "text_en": "The cure for ignorance is to ask and learn.",
+    "text_ur": "جہالت کا علاج پوچھنا اور سیکھنا ہے۔",
+    "source": "Sunan Abu Dawud 336",
+    "category": "Reflection"
+  },
+  {
+    "id": 173,
+    "text_en": "And do not pursue that of which you have no knowledge.",
+    "text_ur": "اور جس چیز کا تمہیں علم نہ ہو اس کے پیچھے نہ لگو۔",
+    "source": "Quran 17:36",
+    "category": "Character"
+  },
+  {
+    "id": 174,
+    "text_en": "O believers, let not some men among you laugh at others.",
+    "text_ur": "اے ایمان والو! مرد دوسرے مردوں کا مذاق نہ اڑائیں۔",
+    "source": "Quran 49:11",
+    "category": "Kindness"
+  },
+  {
+    "id": 175,
+    "text_en": "Among the most perfect believers in faith are those who are best in character and kindest to their spouses.",
+    "text_ur": "مومنوں میں سب سے کامل ایمان والے وہ ہیں جو اخلاق میں بہترین ہوں اور اپنی بیویوں کے ساتھ مہربان ہوں۔",
+    "source": "Sunan at-Tirmidhi 1162",
+    "category": "Life"
+  },
+  {
+    "id": 176,
+    "text_en": "And those who spend in the cause of Allah and do not follow up their spending with reminders of their generosity or injury, they will have their reward with their Lord.",
+    "text_ur": "اور جو لوگ اللہ کی راہ میں خرچ کرتے ہیں پھر احسان نہیں جتاتے اور نہ تکلیف دیتے ہیں ان کا اجر ان کے رب کے پاس ہے۔",
+    "source": "Quran 2:262",
+    "category": "Kindness"
+  },
+  {
+    "id": 177,
+    "text_en": "He grants wisdom to whom He wills, and whoever has been granted wisdom has been given much good.",
+    "text_ur": "وہ جسے چاہتا ہے حکمت عطا کرتا ہے اور جسے حکمت دی گئی اسے بہت بھلائی دی گئی۔",
+    "source": "Quran 2:269",
+    "category": "Reflection"
+  },
+  {
+    "id": 178,
+    "text_en": "And lower to them the wing of humility out of mercy and say: My Lord, have mercy upon them as they brought me up when I was small.",
+    "text_ur": "اور ان کے لیے رحمت سے عاجزی کا بازو جھکا دو اور کہو اے میرے رب ان پر رحم فرما جیسا انہوں نے مجھے بچپن میں پالا۔",
+    "source": "Quran 17:24",
+    "category": "Mercy"
+  },
+  {
+    "id": 179,
+    "text_en": "The most beloved places to Allah are the mosques, and the most hated places to Allah are the markets.",
+    "text_ur": "اللہ کو سب سے محبوب جگہیں مسجدیں ہیں اور سب سے ناپسندیدہ جگہیں بازار ہیں۔",
+    "source": "Sahih Muslim 671",
+    "category": "Prayer"
+  },
+  {
+    "id": 180,
+    "text_en": "Whoever follows a path to seek knowledge, Allah will make the path of Paradise easy for him.",
+    "text_ur": "جو علم حاصل کرنے کے لیے کسی راستے پر چلے اللہ اس کے لیے جنت کا راستہ آسان فرما دے گا۔",
+    "source": "Sahih Muslim 2699",
+    "category": "Reflection"
+  },
+  {
+    "id": 181,
+    "text_en": "And remember your Lord within yourself in humility and in fear and without being loud.",
+    "text_ur": "اور اپنے رب کو اپنے دل میں عاجزی اور خوف سے یاد کرو بغیر زور سے بولے۔",
+    "source": "Quran 7:205",
+    "category": "Prayer"
+  },
+  {
+    "id": 182,
+    "text_en": "When one of you sees something he should wish for, let him say Masha Allah, there is no power except with Allah.",
+    "text_ur": "جب تم میں سے کوئی پسندیدہ چیز دیکھے تو کہے ماشاءاللہ اللہ کے سوا کوئی طاقت نہیں۔",
+    "source": "Islamic Wisdom",
+    "category": "Gratitude"
+  },
+  {
+    "id": 183,
+    "text_en": "Allah loves that when one of you does something, he does it with excellence.",
+    "text_ur": "اللہ پسند فرماتا ہے کہ جب تم میں سے کوئی کام کرے تو اسے بہترین طریقے سے کرے۔",
+    "source": "Musnad Abu Ya'la 4386",
+    "category": "Character"
+  },
+  {
+    "id": 184,
+    "text_en": "And say: Truth has come and falsehood has departed. Indeed falsehood is bound to depart.",
+    "text_ur": "اور کہو حق آ گیا اور باطل مٹ گیا بے شک باطل مٹنے والا ہے۔",
+    "source": "Quran 17:81",
+    "category": "Hope"
+  },
+  {
+    "id": 185,
+    "text_en": "And for those who fear Allah, He prepares a way out and provides for them from where they do not expect.",
+    "text_ur": "اور جو اللہ سے ڈرتا ہے وہ اس کے لیے نکلنے کا راستہ بنا دیتا ہے اور اسے ایسی جگہ سے رزق دیتا ہے جہاں سے اسے گمان نہ ہو۔",
+    "source": "Quran 65:2-3",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 186,
+    "text_en": "And the believers, men and women, are allies of one another.",
+    "text_ur": "اور مومن مرد اور مومن عورتیں ایک دوسرے کے مددگار ہیں۔",
+    "source": "Quran 9:71",
+    "category": "Life"
+  },
+  {
+    "id": 187,
+    "text_en": "Say: O My servants who have transgressed against themselves, do not despair of the mercy of Allah.",
+    "text_ur": "کہہ دو اے میرے بندو جنہوں نے اپنی جانوں پر زیادتی کی ہے اللہ کی رحمت سے مایوس نہ ہو۔",
+    "source": "Quran 39:53",
+    "category": "Mercy"
+  },
+  {
+    "id": 188,
+    "text_en": "And turn to Allah in repentance, all of you, O believers, that you might succeed.",
+    "text_ur": "اور اللہ کی طرف توبہ کرو اے مومنو تاکہ تم کامیاب ہو جاؤ۔",
+    "source": "Quran 24:31",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 189,
+    "text_en": "And He is the Forgiving, the Loving.",
+    "text_ur": "اور وہ بخشنے والا محبت کرنے والا ہے۔",
+    "source": "Quran 85:14",
+    "category": "Mercy"
+  },
+  {
+    "id": 190,
+    "text_en": "Whoever is kind, affable, and easy-going, Allah prohibits the Fire for him.",
+    "text_ur": "جو نرم مزاج، ملنسار اور آسان ہے اللہ نے اس پر آگ حرام کر دی ہے۔",
+    "source": "Musnad Ahmad 3938",
+    "category": "Kindness"
+  },
+  {
+    "id": 191,
+    "text_en": "And fear a Day when you will be returned to Allah.",
+    "text_ur": "اور اس دن سے ڈرو جب تم اللہ کی طرف لوٹائے جاؤ گے۔",
+    "source": "Quran 2:281",
+    "category": "Reflection"
+  },
+  {
+    "id": 192,
+    "text_en": "There is no disease that Allah has created except that He also has created its treatment.",
+    "text_ur": "اللہ نے کوئی بیماری نہیں بنائی مگر اس کا علاج بھی بنایا ہے۔",
+    "source": "Sahih al-Bukhari 5678",
+    "category": "Hope"
+  },
+  {
+    "id": 193,
+    "text_en": "And We have certainly created man and We know what his soul whispers to him, and We are closer to him than his jugular vein.",
+    "text_ur": "اور بے شک ہم نے انسان کو پیدا کیا اور ہم جانتے ہیں جو اس کا نفس اسے وسوسہ ڈالتا ہے اور ہم اس کی شہ رگ سے بھی قریب ہیں۔",
+    "source": "Quran 50:16",
+    "category": "Faith"
+  },
+  {
+    "id": 194,
+    "text_en": "A kind word and forgiveness are better than charity followed by injury.",
+    "text_ur": "اچھی بات اور معافی اس صدقے سے بہتر ہے جس کے بعد تکلیف دی جائے۔",
+    "source": "Quran 2:263",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 195,
+    "text_en": "Dua is the weapon of the believer.",
+    "text_ur": "دعا مومن کا ہتھیار ہے۔",
+    "source": "Mustadrak al-Hakim 1812",
+    "category": "Prayer"
+  },
+  {
+    "id": 196,
+    "text_en": "And do not consume one another's wealth unjustly.",
+    "text_ur": "اور ایک دوسرے کا مال ناحق نہ کھاؤ۔",
+    "source": "Quran 2:188",
+    "category": "Character"
+  },
+  {
+    "id": 197,
+    "text_en": "And Allah is full of kindness to His servants.",
+    "text_ur": "اور اللہ اپنے بندوں پر بہت مہربان ہے۔",
+    "source": "Quran 42:19",
+    "category": "Mercy"
+  },
+  {
+    "id": 198,
+    "text_en": "The one who is ungrateful for small blessings will not be grateful for great ones.",
+    "text_ur": "جو چھوٹی نعمتوں کا شکر نہیں کرتا وہ بڑی نعمتوں کا بھی شکر نہیں کرے گا۔",
+    "source": "Islamic Wisdom",
+    "category": "Gratitude"
+  },
+  {
+    "id": 199,
+    "text_en": "And spend from what We have provided you before death approaches one of you.",
+    "text_ur": "اور جو ہم نے تمہیں دیا ہے اس میں سے خرچ کرو قبل اس کے کہ تم میں سے کسی کو موت آ جائے۔",
+    "source": "Quran 63:10",
+    "category": "Life"
+  },
+  {
+    "id": 200,
+    "text_en": "And if all the trees on earth were pens and the ocean were ink, the words of Allah would not be exhausted.",
+    "text_ur": "اور اگر زمین کے سارے درخت قلم ہو جائیں اور سمندر سیاہی ہو جائے تب بھی اللہ کے کلمات ختم نہ ہوں۔",
+    "source": "Quran 31:27",
+    "category": "Quran"
+  },
+  {
+    "id": 201,
+    "text_en": "And We have already created man and know what his soul whispers. We are closer to him than his jugular vein.",
+    "text_ur": "ہم نے انسان کو پیدا کیا اور اس کے دل کے وسوسے جانتے ہیں ہم اس کی شہ رگ سے بھی قریب ہیں۔",
+    "source": "Quran 50:16",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 202,
+    "text_en": "And He taught Adam the names of all things.",
+    "text_ur": "اور اللہ نے آدم کو تمام چیزوں کے نام سکھائے۔",
+    "source": "Quran 2:31",
+    "category": "Quran"
+  },
+  {
+    "id": 203,
+    "text_en": "The world is green and sweet, and Allah has made you stewards over it.",
+    "text_ur": "دنیا سرسبز اور شیریں ہے اور اللہ نے تمہیں اس کا نگران بنایا ہے۔",
+    "source": "Sahih Muslim 2742",
+    "category": "Life"
+  },
+  {
+    "id": 204,
+    "text_en": "Whoever makes the Hereafter his goal, Allah makes his heart rich and organizes his affairs.",
+    "text_ur": "جو آخرت کو اپنا مقصد بنائے اللہ اس کے دل کو غنی کر دیتا ہے اور اس کے معاملات سنوار دیتا ہے۔",
+    "source": "Sunan at-Tirmidhi 2465",
+    "category": "Hope"
+  },
+  {
+    "id": 205,
+    "text_en": "And He is with you wherever you are. And Allah sees all that you do.",
+    "text_ur": "اور وہ تمہارے ساتھ ہے جہاں بھی تم ہو اور جو کچھ تم کرتے ہو اللہ دیکھ رہا ہے۔",
+    "source": "Quran 57:4",
+    "category": "Faith"
+  },
+  {
+    "id": 206,
+    "text_en": "Glad tidings to the strangers, those who rectify what people have corrupted.",
+    "text_ur": "غربا کو خوشخبری ہو جو لوگوں کی بگاڑی ہوئی چیزوں کو درست کرتے ہیں۔",
+    "source": "Musnad Ahmad 6650",
+    "category": "Hope"
+  },
+  {
+    "id": 207,
+    "text_en": "And to Him belongs whatever is in the heavens and whatever is on the earth, and He is the Most High, the Most Great.",
+    "text_ur": "آسمانوں اور زمین میں جو کچھ ہے سب اسی کا ہے اور وہ بلند و بزرگ ہے۔",
+    "source": "Quran 42:4",
+    "category": "Faith"
+  },
+  {
+    "id": 208,
+    "text_en": "Whoever helps a brother in his time of need, Allah will be there in his time of need.",
+    "text_ur": "جو اپنے بھائی کی ضرورت کے وقت مدد کرے اللہ اس کی ضرورت کے وقت اس کے ساتھ ہوگا۔",
+    "source": "Sahih al-Bukhari 2442",
+    "category": "Kindness"
+  },
+  {
+    "id": 209,
+    "text_en": "And whoever strives only strives for the benefit of himself.",
+    "text_ur": "اور جو کوشش کرتا ہے وہ اپنے ہی فائدے کے لیے کوشش کرتا ہے۔",
+    "source": "Quran 29:6",
+    "category": "Reflection"
+  },
+  {
+    "id": 210,
+    "text_en": "Be in this world as though you are a stranger or a wayfarer and count yourself among the inhabitants of the graves.",
+    "text_ur": "دنیا میں ایسے رہو جیسے تم اجنبی یا مسافر ہو اور اپنے آپ کو قبر والوں میں شمار کرو۔",
+    "source": "Sahih al-Bukhari 6416",
+    "category": "Reflection"
+  },
+  {
+    "id": 211,
+    "text_en": "And those who believe and do righteous deeds, We will surely assign them high chambers in Paradise.",
+    "text_ur": "اور جو ایمان لائے اور نیک اعمال کیے ہم انہیں ضرور جنت کے اونچے محلات میں جگہ دیں گے۔",
+    "source": "Quran 29:58",
+    "category": "Hope"
+  },
+  {
+    "id": 212,
+    "text_en": "Renew your faith by saying there is no god but Allah.",
+    "text_ur": "اپنے ایمان کو تازہ کرو لا الہ الا اللہ کہہ کر۔",
+    "source": "Musnad Ahmad 8695",
+    "category": "Faith"
+  },
+  {
+    "id": 213,
+    "text_en": "Be not like those who forgot Allah, so He made them forget themselves.",
+    "text_ur": "ان لوگوں جیسے نہ ہو جاؤ جنہوں نے اللہ کو بھلا دیا تو اللہ نے انہیں خود اپنے آپ سے غافل کر دیا۔",
+    "source": "Quran 59:19",
+    "category": "Reflection"
+  },
+  {
+    "id": 214,
+    "text_en": "And your Lord creates what He wills and chooses.",
+    "text_ur": "اور تمہارا رب جو چاہتا ہے پیدا کرتا ہے اور جسے چاہتا ہے چن لیتا ہے۔",
+    "source": "Quran 28:68",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 215,
+    "text_en": "Avoid cruelty and injustice for on the Day of Judgment these will be layers of darkness.",
+    "text_ur": "ظلم سے بچو کیونکہ قیامت کے دن ظلم تاریکیوں کی تہیں ہوگا۔",
+    "source": "Sahih Muslim 2578",
+    "category": "Character"
+  },
+  {
+    "id": 216,
+    "text_en": "And Allah has full knowledge and is well acquainted with all things.",
+    "text_ur": "اور اللہ ہر چیز سے باخبر ہے۔",
+    "source": "Quran 4:35",
+    "category": "Faith"
+  },
+  {
+    "id": 217,
+    "text_en": "Do not belittle any good deed, even meeting your brother with a cheerful face.",
+    "text_ur": "کسی بھی نیکی کو حقیر نہ سمجھو خواہ اپنے بھائی سے خوش چہرے سے ملنا ہو۔",
+    "source": "Sahih Muslim 2626",
+    "category": "Kindness"
+  },
+  {
+    "id": 218,
+    "text_en": "The night prayer is the best prayer after the obligatory ones.",
+    "text_ur": "فرض نمازوں کے بعد سب سے بہترین نماز تہجد ہے۔",
+    "source": "Sahih Muslim 1163",
+    "category": "Prayer"
+  },
+  {
+    "id": 219,
+    "text_en": "And let there be from among you a group inviting to all that is good.",
+    "text_ur": "اور تم میں سے ایک جماعت ہونی چاہیے جو نیکی کی طرف بلائے۔",
+    "source": "Quran 3:104",
+    "category": "Character"
+  },
+  {
+    "id": 220,
+    "text_en": "The best remembrance is there is no god but Allah, and the best supplication is all praise is for Allah.",
+    "text_ur": "سب سے بہتر ذکر لا الہ الا اللہ ہے اور سب سے بہتر دعا الحمد للہ ہے۔",
+    "source": "Sunan at-Tirmidhi 3383",
+    "category": "Prayer"
+  },
+  {
+    "id": 221,
+    "text_en": "Indeed, your Lord is vast in forgiveness.",
+    "text_ur": "بے شک تمہارا رب وسیع مغفرت والا ہے۔",
+    "source": "Quran 53:32",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 222,
+    "text_en": "And it may be that you love something that is bad for you.",
+    "text_ur": "اور ہو سکتا ہے کہ تم کسی چیز سے محبت کرو حالانکہ وہ تمہارے لیے بری ہو۔",
+    "source": "Quran 2:216",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 223,
+    "text_en": "Remember death frequently, for it purifies the heart.",
+    "text_ur": "موت کو کثرت سے یاد کرو کیونکہ یہ دل کو پاک کرتی ہے۔",
+    "source": "Sunan at-Tirmidhi 2307",
+    "category": "Reflection"
+  },
+  {
+    "id": 224,
+    "text_en": "Compete with one another in doing good.",
+    "text_ur": "نیک کاموں میں ایک دوسرے سے آگے بڑھو۔",
+    "source": "Quran 2:148",
+    "category": "Character"
+  },
+  {
+    "id": 225,
+    "text_en": "And He is the One who gives life and causes death, and to Him you will be returned.",
+    "text_ur": "اور وہی زندگی دیتا ہے اور موت دیتا ہے اور اسی کی طرف تم لوٹائے جاؤ گے۔",
+    "source": "Quran 23:80",
+    "category": "Faith"
+  },
+  {
+    "id": 226,
+    "text_en": "Hastening to do good deeds is among the best of actions.",
+    "text_ur": "نیک کاموں میں جلدی کرنا بہترین اعمال میں سے ہے۔",
+    "source": "Islamic Wisdom",
+    "category": "Character"
+  },
+  {
+    "id": 227,
+    "text_en": "And We have made from water every living thing. Will they not then believe?",
+    "text_ur": "اور ہم نے پانی سے ہر زندہ چیز بنائی کیا پھر بھی وہ ایمان نہیں لائیں گے۔",
+    "source": "Quran 21:30",
+    "category": "Quran"
+  },
+  {
+    "id": 228,
+    "text_en": "Control your anger, for the strong man is not the one who can wrestle but the one who controls himself when he is angry.",
+    "text_ur": "اپنے غصے پر قابو رکھو کیونکہ طاقتور وہ نہیں جو پہلوان ہو بلکہ وہ ہے جو غصے کے وقت اپنے آپ کو قابو میں رکھے۔",
+    "source": "Sahih al-Bukhari 6114",
+    "category": "Patience"
+  },
+  {
+    "id": 229,
+    "text_en": "Our Lord, accept from us. Indeed, You are the Hearing, the Knowing.",
+    "text_ur": "اے ہمارے رب ہم سے قبول فرما بے شک تو سننے والا جاننے والا ہے۔",
+    "source": "Quran 2:127",
+    "category": "Prayer"
+  },
+  {
+    "id": 230,
+    "text_en": "The best among you is the one who learns the Quran and teaches it to others.",
+    "text_ur": "تم میں بہتر وہ ہے جو قرآن سیکھے اور دوسروں کو سکھائے۔",
+    "source": "Sahih al-Bukhari 5027",
+    "category": "Quran"
+  },
+  {
+    "id": 231,
+    "text_en": "And whoever does good equal to the weight of an atom shall see it.",
+    "text_ur": "اور جس نے ذرہ برابر نیکی کی ہوگی وہ اسے دیکھے گا۔",
+    "source": "Quran 99:7",
+    "category": "Hope"
+  },
+  {
+    "id": 232,
+    "text_en": "Modesty brings nothing but good.",
+    "text_ur": "حیا خیر ہی لاتی ہے۔",
+    "source": "Sahih al-Bukhari 6117",
+    "category": "Character"
+  },
+  {
+    "id": 233,
+    "text_en": "Verily the most honored of you in the sight of Allah is the most righteous of you.",
+    "text_ur": "بے شک اللہ کے نزدیک تم میں سب سے زیادہ عزت والا وہ ہے جو سب سے زیادہ پرہیزگار ہے۔",
+    "source": "Quran 49:13",
+    "category": "Faith"
+  },
+  {
+    "id": 234,
+    "text_en": "And whoever fears Allah, He will make for him ease in his matter.",
+    "text_ur": "اور جو اللہ سے ڈرے اللہ اس کے کام آسان فرما دے گا۔",
+    "source": "Quran 65:4",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 235,
+    "text_en": "The best prayer after the prescribed ones is the prayer in the depths of the night.",
+    "text_ur": "فرض نمازوں کے بعد سب سے بہترین نماز رات کی گہرائی میں پڑھی جانے والی نماز ہے۔",
+    "source": "Sahih Muslim 1163",
+    "category": "Prayer"
+  },
+  {
+    "id": 236,
+    "text_en": "Whoever is humble for the sake of Allah, Allah will raise him.",
+    "text_ur": "جو اللہ کی خاطر عاجزی اختیار کرے اللہ اسے بلند کرتا ہے۔",
+    "source": "Sahih Muslim 2588",
+    "category": "Character"
+  },
+  {
+    "id": 237,
+    "text_en": "Indeed, the promise of Allah is truth.",
+    "text_ur": "بے شک اللہ کا وعدہ سچا ہے۔",
+    "source": "Quran 31:33",
+    "category": "Hope"
+  },
+  {
+    "id": 238,
+    "text_en": "A person will be with those whom he loves on the Day of Judgment.",
+    "text_ur": "قیامت کے دن انسان ان لوگوں کے ساتھ ہوگا جن سے وہ محبت کرتا ہے۔",
+    "source": "Sahih al-Bukhari 6168",
+    "category": "Hope"
+  },
+  {
+    "id": 239,
+    "text_en": "And those who patiently persevere will truly receive a reward without measure.",
+    "text_ur": "اور صبر کرنے والوں کو بے حساب اجر دیا جائے گا۔",
+    "source": "Quran 39:10",
+    "category": "Patience"
+  },
+  {
+    "id": 240,
+    "text_en": "Verily with every difficulty there is relief.",
+    "text_ur": "بے شک ہر مشکل کے ساتھ آسانی ہے۔",
+    "source": "Quran 94:5",
+    "category": "Hope"
+  },
+  {
+    "id": 241,
+    "text_en": "And on the earth are signs for the certain in faith.",
+    "text_ur": "اور زمین میں یقین کرنے والوں کے لیے نشانیاں ہیں۔",
+    "source": "Quran 51:20",
+    "category": "Faith"
+  },
+  {
+    "id": 242,
+    "text_en": "O you who believe, remember Allah with much remembrance.",
+    "text_ur": "اے ایمان والو! اللہ کو کثرت سے یاد کرو۔",
+    "source": "Quran 33:41",
+    "category": "Prayer"
+  },
+  {
+    "id": 243,
+    "text_en": "Whoever shows patience, Allah will give him patience, and no one is granted a gift better and more comprehensive than patience.",
+    "text_ur": "جو صبر کرے اللہ اسے صبر عطا فرماتا ہے اور صبر سے بہتر اور وسیع کوئی نعمت نہیں دی گئی۔",
+    "source": "Sahih al-Bukhari 1469",
+    "category": "Patience"
+  },
+  {
+    "id": 244,
+    "text_en": "And it is Allah who is the Protecting Friend of those who believe. He brings them out from darkness into light.",
+    "text_ur": "اللہ ایمان والوں کا دوست ہے وہ انہیں اندھیروں سے نکال کر روشنی میں لے آتا ہے۔",
+    "source": "Quran 2:257",
+    "category": "Faith"
+  },
+  {
+    "id": 245,
+    "text_en": "Charity does not decrease wealth.",
+    "text_ur": "صدقہ مال کو کم نہیں کرتا۔",
+    "source": "Sahih Muslim 2588",
+    "category": "Kindness"
+  },
+  {
+    "id": 246,
+    "text_en": "And say: Work, for Allah will see your work, and so will His Messenger and the believers.",
+    "text_ur": "اور کہو عمل کرو اللہ تمہارا عمل دیکھے گا اور اس کا رسول اور مومن بھی۔",
+    "source": "Quran 9:105",
+    "category": "Life"
+  },
+  {
+    "id": 247,
+    "text_en": "And We gave him wisdom and good judgment in speech.",
+    "text_ur": "اور ہم نے اسے حکمت اور فیصلہ کن بات دی۔",
+    "source": "Quran 38:20",
+    "category": "Quran"
+  },
+  {
+    "id": 248,
+    "text_en": "The closest people to me on the Day of Judgment will be those with the best character.",
+    "text_ur": "قیامت کے دن مجھ سے سب سے قریب وہ لوگ ہوں گے جن کے اخلاق سب سے اچھے ہوں۔",
+    "source": "Sunan at-Tirmidhi 2018",
+    "category": "Character"
+  },
+  {
+    "id": 249,
+    "text_en": "Make supplication to Allah in a state of certainty that it will be answered.",
+    "text_ur": "اللہ سے یقین کے ساتھ دعا کرو کہ قبول ہوگی۔",
+    "source": "Sunan at-Tirmidhi 3479",
+    "category": "Prayer"
+  },
+  {
+    "id": 250,
+    "text_en": "The doors of goodness are many: glorifying Allah, praising Him, charitable giving, enjoining good, forbidding evil, and removing harm from the road.",
+    "text_ur": "نیکی کے دروازے بہت ہیں تسبیح، حمد، صدقہ، نیکی کا حکم دینا، برائی سے روکنا اور راستے سے تکلیف دہ چیز ہٹانا۔",
+    "source": "Sahih Muslim 1009",
+    "category": "Kindness"
+  },
+  {
+    "id": 251,
+    "text_en": "And He is with you wherever you may be.",
+    "text_ur": "اور تم جہاں بھی ہو وہ تمہارے ساتھ ہے۔",
+    "source": "Quran 57:4",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 252,
+    "text_en": "Indeed, We have honored the children of Adam.",
+    "text_ur": "بے شک ہم نے اولاد آدم کو عزت بخشی۔",
+    "source": "Quran 17:70",
+    "category": "Reflection"
+  },
+  {
+    "id": 253,
+    "text_en": "No one can achieve anything except through hard work and sincere effort.",
+    "text_ur": "کوئی بھی شخص محنت اور مخلصانہ کوشش کے بغیر کچھ حاصل نہیں کر سکتا۔",
+    "source": "Islamic Wisdom",
+    "category": "Life"
+  },
+  {
+    "id": 254,
+    "text_en": "O son of Adam, I forgave you and I do not mind, so long as you call upon Me and hope in Me.",
+    "text_ur": "اے ابنِ آدم جب تک تم مجھے پکارتے رہو اور مجھ سے امید رکھو میں تمہیں معاف کرتا رہوں گا مجھے کوئی پرواہ نہیں۔",
+    "source": "Sunan at-Tirmidhi 3540",
+    "category": "Mercy"
+  },
+  {
+    "id": 255,
+    "text_en": "Worship Allah as if you see Him, for even if you do not see Him, He sees you.",
+    "text_ur": "اللہ کی عبادت ایسے کرو جیسے تم اسے دیکھ رہے ہو اگر تم اسے نہ دیکھو تو وہ تمہیں دیکھ رہا ہے۔",
+    "source": "Sahih al-Bukhari 50",
+    "category": "Faith"
+  },
+  {
+    "id": 256,
+    "text_en": "And those who give in charity, male and female, and lend to Allah a goodly loan, it shall be increased manifold.",
+    "text_ur": "اور صدقہ دینے والے مرد اور عورتیں اور جو اللہ کو قرضِ حسنہ دیں ان کے لیے بڑھا چڑھا کر دیا جائے گا۔",
+    "source": "Quran 57:18",
+    "category": "Gratitude"
+  },
+  {
+    "id": 257,
+    "text_en": "And We did not create the sky and the earth and everything between them without purpose.",
+    "text_ur": "اور ہم نے آسمان اور زمین اور جو کچھ ان کے درمیان ہے بے مقصد نہیں بنایا۔",
+    "source": "Quran 38:27",
+    "category": "Reflection"
+  },
+  {
+    "id": 258,
+    "text_en": "Your body has a right over you.",
+    "text_ur": "تمہارے جسم کا تم پر حق ہے۔",
+    "source": "Sahih al-Bukhari 5199",
+    "category": "Life"
+  },
+  {
+    "id": 259,
+    "text_en": "Those who spend their wealth in the night and in the day, secretly and publicly, will receive their reward from their Lord.",
+    "text_ur": "جو لوگ رات اور دن میں چھپ کر اور ظاہر کر کے خرچ کرتے ہیں ان کا اجر ان کے رب کے پاس ہے۔",
+    "source": "Quran 2:274",
+    "category": "Kindness"
+  },
+  {
+    "id": 260,
+    "text_en": "Allah tests those He loves most.",
+    "text_ur": "اللہ انہیں آزماتا ہے جن سے سب سے زیادہ محبت کرتا ہے۔",
+    "source": "Sunan at-Tirmidhi 2396",
+    "category": "Patience"
+  },
+  {
+    "id": 261,
+    "text_en": "And it is He who created the night and the day and the sun and the moon.",
+    "text_ur": "اور وہی ہے جس نے رات اور دن کو اور سورج اور چاند کو بنایا۔",
+    "source": "Quran 21:33",
+    "category": "Reflection"
+  },
+  {
+    "id": 262,
+    "text_en": "Good character is the heaviest thing placed on the scale of deeds.",
+    "text_ur": "اچھے اخلاق اعمال کے ترازو میں رکھی جانے والی سب سے بھاری چیز ہیں۔",
+    "source": "Sunan Abu Dawud 4799",
+    "category": "Character"
+  },
+  {
+    "id": 263,
+    "text_en": "O you who believe, enter into peace wholeheartedly.",
+    "text_ur": "اے ایمان والو! پوری طرح اسلام میں داخل ہو جاؤ۔",
+    "source": "Quran 2:208",
+    "category": "Faith"
+  },
+  {
+    "id": 264,
+    "text_en": "There is a polish for everything that takes away rust, and the polish of the heart is the remembrance of Allah.",
+    "text_ur": "ہر چیز کے لیے ایک جلا ہے جو زنگ کو دور کرتی ہے اور دل کی جلا اللہ کا ذکر ہے۔",
+    "source": "Shuab al-Iman 522",
+    "category": "Prayer"
+  },
+  {
+    "id": 265,
+    "text_en": "If a thing is destined for you, it will reach you even if it is beneath two mountains.",
+    "text_ur": "اگر کوئی چیز تمہاری تقدیر میں ہے تو وہ تم تک پہنچ کر رہے گی خواہ دو پہاڑوں کے نیچے ہو۔",
+    "source": "Islamic Wisdom",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 266,
+    "text_en": "And when you have decided, then rely upon Allah.",
+    "text_ur": "اور جب تم فیصلہ کر لو تو اللہ پر بھروسہ کرو۔",
+    "source": "Quran 3:159",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 267,
+    "text_en": "The strong believer is better and more loved by Allah than the weak believer, and in both there is good.",
+    "text_ur": "طاقتور مومن اللہ کو کمزور مومن سے زیادہ محبوب ہے اور دونوں میں خیر ہے۔",
+    "source": "Sahih Muslim 2664",
+    "category": "Faith"
+  },
+  {
+    "id": 268,
+    "text_en": "And be grateful to Me and do not deny Me.",
+    "text_ur": "اور میرا شکر ادا کرو اور میری ناشکری مت کرو۔",
+    "source": "Quran 2:152",
+    "category": "Gratitude"
+  },
+  {
+    "id": 269,
+    "text_en": "He who does not show mercy will not be shown mercy.",
+    "text_ur": "جو رحم نہیں کرتا اس پر رحم نہیں کیا جاتا۔",
+    "source": "Sahih al-Bukhari 5997",
+    "category": "Mercy"
+  },
+  {
+    "id": 270,
+    "text_en": "And fulfill the covenant of Allah when you have made a covenant.",
+    "text_ur": "اور اللہ کا عہد پورا کرو جب تم عہد کرو۔",
+    "source": "Quran 16:91",
+    "category": "Character"
+  },
+  {
+    "id": 271,
+    "text_en": "And those who strive in Our cause, We will certainly guide them to Our paths.",
+    "text_ur": "اور جو ہماری راہ میں جہاد کریں ہم ضرور انہیں اپنے راستوں کی ہدایت دیں گے۔",
+    "source": "Quran 29:69",
+    "category": "Hope"
+  },
+  {
+    "id": 272,
+    "text_en": "Fasting is a shield against the Hellfire.",
+    "text_ur": "روزہ جہنم کی آگ سے ڈھال ہے۔",
+    "source": "Musnad Ahmad 14669",
+    "category": "Prayer"
+  },
+  {
+    "id": 273,
+    "text_en": "And whoever is saved from the greed of his own soul, such are the successful.",
+    "text_ur": "اور جو اپنے نفس کے لالچ سے بچایا گیا وہی کامیاب ہیں۔",
+    "source": "Quran 59:9",
+    "category": "Life"
+  },
+  {
+    "id": 274,
+    "text_en": "Forgive him who wrongs you, join him who cuts you off, do good to him who does evil to you.",
+    "text_ur": "اسے معاف کرو جو تم پر ظلم کرے جوڑو اس سے جو تم سے کٹے اور بھلائی کرو اس سے جو تمہارے ساتھ برائی کرے۔",
+    "source": "Musnad Ahmad 17452",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 275,
+    "text_en": "Allah is with those who restrain themselves.",
+    "text_ur": "اللہ صبر کرنے والوں کے ساتھ ہے۔",
+    "source": "Quran 2:153",
+    "category": "Patience"
+  },
+  {
+    "id": 276,
+    "text_en": "No one eats better food than that which he eats from the work of his own hands.",
+    "text_ur": "کسی نے اپنے ہاتھ کی کمائی سے بہتر کھانا نہیں کھایا۔",
+    "source": "Sahih al-Bukhari 2072",
+    "category": "Life"
+  },
+  {
+    "id": 277,
+    "text_en": "And He is the All-Knowing, the All-Wise.",
+    "text_ur": "اور وہ سب کچھ جاننے والا حکمت والا ہے۔",
+    "source": "Quran 4:26",
+    "category": "Faith"
+  },
+  {
+    "id": 278,
+    "text_en": "Look at those below you and do not look at those above you, for it is better that you do not belittle the blessings of Allah.",
+    "text_ur": "اپنے سے نیچے والوں کو دیکھو اپنے سے اوپر والوں کو نہ دیکھو تاکہ اللہ کی نعمتوں کو حقیر نہ سمجھو۔",
+    "source": "Sahih Muslim 2963",
+    "category": "Gratitude"
+  },
+  {
+    "id": 279,
+    "text_en": "Indeed, Allah commands justice and good conduct and giving to relatives and forbids immorality and bad conduct.",
+    "text_ur": "بے شک اللہ عدل، احسان اور رشتہ داروں کو دینے کا حکم دیتا ہے اور بے حیائی اور برے کاموں سے منع کرتا ہے۔",
+    "source": "Quran 16:90",
+    "category": "Character"
+  },
+  {
+    "id": 280,
+    "text_en": "He created you from one soul and from it created its mate.",
+    "text_ur": "اس نے تمہیں ایک جان سے پیدا کیا اور اسی سے اس کا جوڑا بنایا۔",
+    "source": "Quran 4:1",
+    "category": "Life"
+  },
+  {
+    "id": 281,
+    "text_en": "The most beloved speech to Allah is when the servant says: Glory be to You O Allah and with Your praise, blessed is Your Name and exalted is Your Majesty.",
+    "text_ur": "اللہ کو سب سے محبوب کلام یہ ہے کہ بندہ کہے سبحانک اللہم و بحمدک تبارک اسمک و تعالیٰ جدک۔",
+    "source": "Sunan at-Tirmidhi 243",
+    "category": "Prayer"
+  },
+  {
+    "id": 282,
+    "text_en": "And to Allah belongs the unseen of the heavens and the earth.",
+    "text_ur": "اور آسمانوں اور زمین کا غیب اللہ کے لیے ہے۔",
+    "source": "Quran 11:123",
+    "category": "Faith"
+  },
+  {
+    "id": 283,
+    "text_en": "Be merciful to those on the earth and the One in the heavens will have mercy upon you.",
+    "text_ur": "زمین والوں پر رحم کرو آسمان والا تم پر رحم کرے گا۔",
+    "source": "Sunan Abu Dawud 4941",
+    "category": "Mercy"
+  },
+  {
+    "id": 284,
+    "text_en": "Wondrous is the affair of the believer, for there is good in every affair of his.",
+    "text_ur": "مومن کا معاملہ عجیب ہے اس کا ہر معاملہ خیر ہے۔",
+    "source": "Sahih Muslim 2999",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 285,
+    "text_en": "And upon Allah let the believers rely.",
+    "text_ur": "اور ایمان والوں کو اللہ ہی پر بھروسہ رکھنا چاہیے۔",
+    "source": "Quran 3:122",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 286,
+    "text_en": "And that there is not for man except that for which he strives.",
+    "text_ur": "اور انسان کو وہی ملتا ہے جس کی وہ کوشش کرتا ہے۔",
+    "source": "Quran 53:39",
+    "category": "Life"
+  },
+  {
+    "id": 287,
+    "text_en": "Indeed, Allah loves those who rely upon Him.",
+    "text_ur": "بے شک اللہ توکل کرنے والوں سے محبت کرتا ہے۔",
+    "source": "Quran 3:159",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 288,
+    "text_en": "And whoever does righteous deeds while being a believer, he will have no fear of injustice or deprivation.",
+    "text_ur": "اور جو ایمان کے ساتھ نیک عمل کرے اسے نہ ظلم کا خوف ہو نہ حق تلفی کا۔",
+    "source": "Quran 20:112",
+    "category": "Hope"
+  },
+  {
+    "id": 289,
+    "text_en": "Truthfulness leads to righteousness and righteousness leads to Paradise.",
+    "text_ur": "سچائی نیکی کی طرف لے جاتی ہے اور نیکی جنت کی طرف لے جاتی ہے۔",
+    "source": "Sahih al-Bukhari 6094",
+    "category": "Hadith"
+  },
+  {
+    "id": 290,
+    "text_en": "The prayer is the light of the believer.",
+    "text_ur": "نماز مومن کا نور ہے۔",
+    "source": "Musnad Ahmad 22076",
+    "category": "Prayer"
+  },
+  {
+    "id": 291,
+    "text_en": "And whoever is grateful, he is grateful for himself.",
+    "text_ur": "اور جو شکر کرتا ہے وہ اپنے لیے ہی شکر کرتا ہے۔",
+    "source": "Quran 27:40",
+    "category": "Gratitude"
+  },
+  {
+    "id": 292,
+    "text_en": "O son of Adam, so long as you call upon Me and ask of Me, I shall forgive you for what you have done.",
+    "text_ur": "اے ابنِ آدم جب تک تم مجھے پکارتے اور مجھ سے مانگتے رہو گے میں تمہیں معاف کرتا رہوں گا۔",
+    "source": "Sunan at-Tirmidhi 3540",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 293,
+    "text_en": "And He is Able to do all things.",
+    "text_ur": "اور وہ ہر چیز پر قادر ہے۔",
+    "source": "Quran 5:120",
+    "category": "Faith"
+  },
+  {
+    "id": 294,
+    "text_en": "Cleanliness is half of faith.",
+    "text_ur": "صفائی آدھا ایمان ہے۔",
+    "source": "Sahih Muslim 223",
+    "category": "Hadith"
+  },
+  {
+    "id": 295,
+    "text_en": "Allah intends for you ease and does not intend for you hardship.",
+    "text_ur": "اللہ تمہارے ساتھ آسانی چاہتا ہے تمہارے ساتھ تنگی نہیں چاہتا۔",
+    "source": "Quran 2:185",
+    "category": "Mercy"
+  },
+  {
+    "id": 296,
+    "text_en": "The signs of the hypocrite are three: when he speaks he lies, when he promises he breaks it, and when he is entrusted he betrays.",
+    "text_ur": "منافق کی تین نشانیاں ہیں جب بات کرے تو جھوٹ بولے جب وعدہ کرے تو توڑے اور جب امانت دی جائے تو خیانت کرے۔",
+    "source": "Sahih al-Bukhari 33",
+    "category": "Hadith"
+  },
+  {
+    "id": 297,
+    "text_en": "Read the Quran for it will come as an intercessor for its reciters on the Day of Judgment.",
+    "text_ur": "قرآن پڑھو کیونکہ قیامت کے دن یہ اپنے پڑھنے والوں کی سفارش کرے گا۔",
+    "source": "Sahih Muslim 804",
+    "category": "Quran"
+  },
+  {
+    "id": 298,
+    "text_en": "The most hated speech to Allah is when a person says I and I and I.",
+    "text_ur": "اللہ کو سب سے ناپسندیدہ بات یہ ہے کہ آدمی کہے میں میں میں۔",
+    "source": "Islamic Wisdom",
+    "category": "Character"
+  },
+  {
+    "id": 299,
+    "text_en": "Indeed, We have given you a clear victory.",
+    "text_ur": "بے شک ہم نے تمہیں کھلی فتح عطا کی۔",
+    "source": "Quran 48:1",
+    "category": "Hope"
+  },
+  {
+    "id": 300,
+    "text_en": "And whoever obeys Allah and His Messenger has certainly attained a great attainment.",
+    "text_ur": "اور جس نے اللہ اور اس کے رسول کی اطاعت کی اس نے بڑی کامیابی حاصل کی۔",
+    "source": "Quran 33:71",
+    "category": "Faith"
+  },
+  {
+    "id": 301,
+    "text_en": "The best among you are those who have the best manners and character.",
+    "text_ur": "تم میں سب سے بہتر وہ لوگ ہیں جن کے اخلاق سب سے اچھے ہوں۔",
+    "source": "Sahih al-Bukhari 3559",
+    "category": "Character"
+  },
+  {
+    "id": 302,
+    "text_en": "And to Allah belongs the outcome of all matters.",
+    "text_ur": "اور تمام معاملات کا انجام اللہ کے ہاتھ میں ہے۔",
+    "source": "Quran 22:41",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 303,
+    "text_en": "When My servants ask about Me, I am indeed close to them.",
+    "text_ur": "جب میرے بندے میرے بارے میں پوچھیں تو بے شک میں قریب ہوں۔",
+    "source": "Quran 2:186",
+    "category": "Prayer"
+  },
+  {
+    "id": 304,
+    "text_en": "Whoever guides someone to virtue will be rewarded equivalent to him who practices that good deed.",
+    "text_ur": "جو کسی کو نیکی کی رہنمائی کرے اسے بھی اتنا ہی اجر ملے گا جتنا عمل کرنے والے کو۔",
+    "source": "Sahih Muslim 1893",
+    "category": "Kindness"
+  },
+  {
+    "id": 305,
+    "text_en": "And say: My Lord, forgive and have mercy, for You are the best of the merciful.",
+    "text_ur": "اور کہو اے میرے رب بخش دے اور رحم فرما کیونکہ تو سب سے بہتر رحم فرمانے والا ہے۔",
+    "source": "Quran 23:118",
+    "category": "Mercy"
+  },
+  {
+    "id": 306,
+    "text_en": "The one who visits a sick person is in the garden of Paradise until he returns.",
+    "text_ur": "جو شخص کسی بیمار کی عیادت کرتا ہے وہ لوٹنے تک جنت کے باغ میں ہوتا ہے۔",
+    "source": "Sahih Muslim 2568",
+    "category": "Kindness"
+  },
+  {
+    "id": 307,
+    "text_en": "And for every nation there is a direction to which they face.",
+    "text_ur": "اور ہر قوم کے لیے ایک سمت ہے جس کی طرف وہ رخ کرتی ہے۔",
+    "source": "Quran 2:148",
+    "category": "Reflection"
+  },
+  {
+    "id": 308,
+    "text_en": "Guard strictly your prayers, especially the middle prayer.",
+    "text_ur": "نمازوں کی حفاظت کرو خاص طور پر درمیانی نماز کی۔",
+    "source": "Quran 2:238",
+    "category": "Prayer"
+  },
+  {
+    "id": 309,
+    "text_en": "The one who eats and is grateful is like the status of the one who fasts and is patient.",
+    "text_ur": "کھانے والا شکر گزار اس روزے دار صبر کرنے والے کے مرتبے میں ہے۔",
+    "source": "Sunan at-Tirmidhi 2486",
+    "category": "Gratitude"
+  },
+  {
+    "id": 310,
+    "text_en": "Indeed, with the name of Allah, neither can anything in the earth nor in the heavens cause harm.",
+    "text_ur": "بے شک اللہ کے نام کے ساتھ نہ زمین میں کوئی چیز نقصان پہنچا سکتی ہے نہ آسمان میں۔",
+    "source": "Sunan Abu Dawud 5088",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 311,
+    "text_en": "And say to My servants to speak in the best manner.",
+    "text_ur": "اور میرے بندوں سے کہو کہ اچھے طریقے سے بات کریں۔",
+    "source": "Quran 17:53",
+    "category": "Kindness"
+  },
+  {
+    "id": 312,
+    "text_en": "And We sent down iron, in which there is great power and benefits for people.",
+    "text_ur": "اور ہم نے لوہا نازل کیا جس میں سخت طاقت ہے اور لوگوں کے لیے فائدے ہیں۔",
+    "source": "Quran 57:25",
+    "category": "Quran"
+  },
+  {
+    "id": 313,
+    "text_en": "Whoever relieves a believer of distress, Allah will relieve him of distress on the Day of Resurrection.",
+    "text_ur": "جو کسی مومن کی مصیبت دور کرے اللہ قیامت کے دن اس کی مصیبت دور فرمائے گا۔",
+    "source": "Sahih Muslim 2699",
+    "category": "Mercy"
+  },
+  {
+    "id": 314,
+    "text_en": "And ask for forgiveness of your Lord and repent to Him.",
+    "text_ur": "اور اپنے رب سے استغفار کرو اور اس کی طرف توبہ کرو۔",
+    "source": "Quran 11:3",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 315,
+    "text_en": "Our Lord, give us in this world that which is good and in the Hereafter that which is good and protect us from the punishment of the Fire.",
+    "text_ur": "اے ہمارے رب ہمیں دنیا میں بھی بھلائی دے اور آخرت میں بھی بھلائی دے اور ہمیں آگ کے عذاب سے بچا۔",
+    "source": "Quran 2:201",
+    "category": "Prayer"
+  },
+  {
+    "id": 316,
+    "text_en": "The most beloved fast to Allah is the fast of Dawud, he would fast one day and not fast the next.",
+    "text_ur": "اللہ کو سب سے محبوب روزہ داؤد علیہ السلام کا ہے وہ ایک دن روزہ رکھتے اور ایک دن چھوڑ دیتے۔",
+    "source": "Sahih al-Bukhari 1131",
+    "category": "Hadith"
+  },
+  {
+    "id": 317,
+    "text_en": "The seeking of knowledge is obligatory for every Muslim.",
+    "text_ur": "علم حاصل کرنا ہر مسلمان پر فرض ہے۔",
+    "source": "Sunan Ibn Majah 224",
+    "category": "Hadith"
+  },
+  {
+    "id": 318,
+    "text_en": "And Allah would not punish them while they seek forgiveness.",
+    "text_ur": "اور اللہ انہیں عذاب نہیں دے گا جب تک وہ استغفار کرتے رہیں۔",
+    "source": "Quran 8:33",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 319,
+    "text_en": "They plan and Allah plans, and Allah is the best of planners.",
+    "text_ur": "وہ تدبیر کرتے ہیں اور اللہ تدبیر کرتا ہے اور اللہ سب سے بہتر تدبیر کرنے والا ہے۔",
+    "source": "Quran 8:30",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 320,
+    "text_en": "And We have enjoined upon man goodness to parents.",
+    "text_ur": "اور ہم نے انسان کو والدین کے ساتھ حسنِ سلوک کی تاکید کی ہے۔",
+    "source": "Quran 29:8",
+    "category": "Character"
+  },
+  {
+    "id": 321,
+    "text_en": "And your Lord is not ever unjust to His servants.",
+    "text_ur": "اور تمہارا رب اپنے بندوں پر ظلم کرنے والا نہیں ہے۔",
+    "source": "Quran 41:46",
+    "category": "Mercy"
+  },
+  {
+    "id": 322,
+    "text_en": "Indeed, those who fear their Lord unseen will have forgiveness and great reward.",
+    "text_ur": "بے شک جو لوگ بن دیکھے اپنے رب سے ڈرتے ہیں ان کے لیے مغفرت اور بڑا اجر ہے۔",
+    "source": "Quran 67:12",
+    "category": "Hope"
+  },
+  {
+    "id": 323,
+    "text_en": "Remove harm from the path of the people. It is an act of charity.",
+    "text_ur": "لوگوں کے راستے سے تکلیف دہ چیز ہٹا دو یہ صدقہ ہے۔",
+    "source": "Sahih al-Bukhari 2989",
+    "category": "Kindness"
+  },
+  {
+    "id": 324,
+    "text_en": "And say to the believing women that they should lower their gaze and guard their modesty.",
+    "text_ur": "اور مومن عورتوں سے کہو کہ اپنی نگاہیں نیچی رکھیں اور اپنی عصمت کی حفاظت کریں۔",
+    "source": "Quran 24:31",
+    "category": "Character"
+  },
+  {
+    "id": 325,
+    "text_en": "Verily, after every hardship comes ease.",
+    "text_ur": "یقیناً ہر مشکل کے بعد آسانی آتی ہے۔",
+    "source": "Quran 94:6",
+    "category": "Patience"
+  },
+  {
+    "id": 326,
+    "text_en": "The one who maintains family ties is not the one who reciprocates, but the one who maintains ties even when they are cut off.",
+    "text_ur": "صلہ رحمی کرنے والا وہ نہیں جو بدلہ دے بلکہ وہ ہے جو رشتہ توڑنے پر بھی جوڑے۔",
+    "source": "Sahih al-Bukhari 5991",
+    "category": "Kindness"
+  },
+  {
+    "id": 327,
+    "text_en": "And of His signs is that you see the earth stilled, but when We send down upon it rain, it quivers and grows.",
+    "text_ur": "اور اس کی نشانیوں میں سے ہے کہ تم زمین کو خشک دیکھتے ہو پھر جب ہم اس پر بارش برساتے ہیں تو وہ تروتازہ ہو جاتی ہے۔",
+    "source": "Quran 41:39",
+    "category": "Reflection"
+  },
+  {
+    "id": 328,
+    "text_en": "The most excellent worship is the anticipation of relief.",
+    "text_ur": "سب سے بہترین عبادت فرج کا انتظار ہے۔",
+    "source": "Sunan at-Tirmidhi 3571",
+    "category": "Patience"
+  },
+  {
+    "id": 329,
+    "text_en": "And whoever emigrates for the cause of Allah will find on the earth many alternative locations and abundance.",
+    "text_ur": "اور جو اللہ کی راہ میں ہجرت کرے وہ زمین میں بہت سی جگہیں اور وسعت پائے گا۔",
+    "source": "Quran 4:100",
+    "category": "Life"
+  },
+  {
+    "id": 330,
+    "text_en": "And those who guard their prayers, they will be in gardens honored.",
+    "text_ur": "اور جو اپنی نمازوں کی حفاظت کرتے ہیں وہ جنت میں عزت سے رہیں گے۔",
+    "source": "Quran 70:34-35",
+    "category": "Prayer"
+  },
+  {
+    "id": 331,
+    "text_en": "Indeed, the hearing, the sight, and the heart — about all those one will be questioned.",
+    "text_ur": "بے شک کان، آنکھ اور دل ان سب کے بارے میں پوچھا جائے گا۔",
+    "source": "Quran 17:36",
+    "category": "Reflection"
+  },
+  {
+    "id": 332,
+    "text_en": "Make du'a when you are in a state of ease so that Allah may answer your du'a when in hardship.",
+    "text_ur": "آسانی میں دعا کرو تاکہ مشکل میں اللہ تمہاری دعا قبول فرمائے۔",
+    "source": "Sunan at-Tirmidhi 3382",
+    "category": "Prayer"
+  },
+  {
+    "id": 333,
+    "text_en": "Indeed those who say Our Lord is Allah and then remain steadfast, the angels descend upon them.",
+    "text_ur": "بے شک جو لوگ کہتے ہیں ہمارا رب اللہ ہے پھر اس پر قائم رہتے ہیں ان پر فرشتے نازل ہوتے ہیں۔",
+    "source": "Quran 41:30",
+    "category": "Faith"
+  },
+  {
+    "id": 334,
+    "text_en": "Allah will never leave a sincere heart unattended.",
+    "text_ur": "اللہ مخلص دل کو کبھی بے توجہ نہیں چھوڑتا۔",
+    "source": "Islamic Wisdom",
+    "category": "Trust in Allah"
+  },
+  {
+    "id": 335,
+    "text_en": "A father gives his child nothing better than good education and upbringing.",
+    "text_ur": "باپ اپنے بچے کو اچھی تربیت سے بہتر کوئی تحفہ نہیں دے سکتا۔",
+    "source": "Sunan at-Tirmidhi 1951",
+    "category": "Life"
+  },
+  {
+    "id": 336,
+    "text_en": "And the stars and trees prostrate to Allah.",
+    "text_ur": "اور ستارے اور درخت اللہ کو سجدہ کرتے ہیں۔",
+    "source": "Quran 55:6",
+    "category": "Quran"
+  },
+  {
+    "id": 337,
+    "text_en": "Allah does not look at your bodies or your forms but He looks at your hearts.",
+    "text_ur": "اللہ تمہارے جسموں اور صورتوں کو نہیں دیکھتا بلکہ تمہارے دلوں کو دیکھتا ہے۔",
+    "source": "Sahih Muslim 2564",
+    "category": "Faith"
+  },
+  {
+    "id": 338,
+    "text_en": "And remain conscious of Allah so that you may be grateful.",
+    "text_ur": "اور اللہ سے ڈرتے رہو تاکہ تم شکرگزار بنو۔",
+    "source": "Quran 3:123",
+    "category": "Gratitude"
+  },
+  {
+    "id": 339,
+    "text_en": "Spread peace, feed others, maintain kinship ties, and pray during the night while others sleep, and you will enter Paradise peacefully.",
+    "text_ur": "سلام پھیلاؤ، کھانا کھلاؤ، رشتے جوڑو اور رات کو نماز پڑھو جب لوگ سوئیں تو سلامتی سے جنت میں داخل ہو جاؤ۔",
+    "source": "Sunan at-Tirmidhi 2485",
+    "category": "Hadith"
+  },
+  {
+    "id": 340,
+    "text_en": "And it is not the eyes that are blind, but blind are the hearts which are within the chests.",
+    "text_ur": "بے شک آنکھیں اندھی نہیں ہوتیں بلکہ وہ دل اندھے ہوتے ہیں جو سینوں میں ہیں۔",
+    "source": "Quran 22:46",
+    "category": "Reflection"
+  },
+  {
+    "id": 341,
+    "text_en": "The greatest of richness is the richness of the soul.",
+    "text_ur": "سب سے بڑی دولت نفس کی بے نیازی ہے۔",
+    "source": "Sahih al-Bukhari 6446",
+    "category": "Gratitude"
+  },
+  {
+    "id": 342,
+    "text_en": "Avoid envy for it eats up good deeds just as fire consumes firewood.",
+    "text_ur": "حسد سے بچو کیونکہ یہ نیکیوں کو ایسے کھا جاتا ہے جیسے آگ لکڑیاں کھاتی ہے۔",
+    "source": "Sunan Abu Dawud 4903",
+    "category": "Character"
+  },
+  {
+    "id": 343,
+    "text_en": "And do not forget your share of lawful enjoyment in this world.",
+    "text_ur": "اور دنیا سے اپنا حصہ نہ بھولو۔",
+    "source": "Quran 28:77",
+    "category": "Life"
+  },
+  {
+    "id": 344,
+    "text_en": "Every breath that does not remember Allah is a lost treasure.",
+    "text_ur": "ہر وہ سانس جس میں اللہ کا ذکر نہ ہو ایک کھویا ہوا خزانہ ہے۔",
+    "source": "Islamic Wisdom",
+    "category": "Reflection"
+  },
+  {
+    "id": 345,
+    "text_en": "Indeed, after difficulty Allah will bring ease.",
+    "text_ur": "بے شک اللہ تنگی کے بعد آسانی فرمائے گا۔",
+    "source": "Quran 65:7",
+    "category": "Hope"
+  },
+  {
+    "id": 346,
+    "text_en": "The believer who mixes with people and bears their annoyance is better than the believer who does not.",
+    "text_ur": "وہ مومن جو لوگوں میں ملتا ہے اور ان کی تکلیف برداشت کرتا ہے اس سے بہتر ہے جو نہیں ملتا۔",
+    "source": "Musnad Ahmad 22588",
+    "category": "Patience"
+  },
+  {
+    "id": 347,
+    "text_en": "And to Allah belong the best names, so invoke Him by them.",
+    "text_ur": "اور اللہ کے اچھے اچھے نام ہیں پس انہی ناموں سے اسے پکارو۔",
+    "source": "Quran 7:180",
+    "category": "Prayer"
+  },
+  {
+    "id": 348,
+    "text_en": "Strive for Paradise whose width is like that of the heavens and the earth.",
+    "text_ur": "اس جنت کی طرف دوڑو جس کی چوڑائی آسمانوں اور زمین جتنی ہے۔",
+    "source": "Quran 57:21",
+    "category": "Hope"
+  },
+  {
+    "id": 349,
+    "text_en": "Whoever covers the faults of a Muslim, Allah will cover his faults on the Day of Resurrection.",
+    "text_ur": "جو کسی مسلمان کے عیب چھپائے اللہ قیامت کے دن اس کے عیب چھپائے گا۔",
+    "source": "Sahih al-Bukhari 2442",
+    "category": "Forgiveness"
+  },
+  {
+    "id": 350,
+    "text_en": "And whoever holds firmly to Allah has been guided to a straight path.",
+    "text_ur": "اور جو اللہ کو مضبوطی سے پکڑ لے وہ سیدھے راستے کی ہدایت پا گیا۔",
+    "source": "Quran 3:101",
+    "category": "Faith"
   }
 ]

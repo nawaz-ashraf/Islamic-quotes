@@ -23,5 +23,7 @@ class AppConstants {
     'Reflection',
     'Quran',
     'Hadith',
+    'Kindness',
+    'Trust in Allah',
   ];
 }

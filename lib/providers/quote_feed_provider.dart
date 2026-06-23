@@ -99,26 +99,27 @@ class QuoteFeedNotifier extends StateNotifier<QuoteFeedState> {
   static const int _pageSize = 50;
   static const int _preloadThreshold = 6;
 
+  /// Tracks which quote IDs have been viewed in this session.
+  final Set<int> _viewedIds = <int>{};
+
   Future<void> _initialize() async {
     try {
       final List<Quote> loadedQuotes = await _repository.loadQuotes();
       final Set<int> favorites = _storage.favoriteQuoteIds;
 
-      final int randomInitialIndex =
-          loadedQuotes.isEmpty ? 0 : Random().nextInt(loadedQuotes.length);
+      // Shuffle for a fresh session order – every launch feels new.
+      final List<Quote> shuffled = List<Quote>.of(loadedQuotes)
+        ..shuffle(Random());
 
       final int initialCount =
-          loadedQuotes.length < _pageSize ? loadedQuotes.length : _pageSize;
-      final int adjustedInitialCount = (randomInitialIndex + 1) > initialCount
-          ? (randomInitialIndex + 1)
-          : initialCount;
+          shuffled.length < _pageSize ? shuffled.length : _pageSize;
 
       state = state.copyWith(
         isLoading: false,
-        allQuotes: loadedQuotes,
+        allQuotes: shuffled,
         favoriteIds: favorites,
-        visibleCount: adjustedInitialCount,
-        initialFeedIndex: randomInitialIndex,
+        visibleCount: initialCount,
+        initialFeedIndex: 0, // Always start at the top.
       );
     } catch (_) {
       state = state.copyWith(isLoading: false);
@@ -147,7 +148,7 @@ class QuoteFeedNotifier extends StateNotifier<QuoteFeedState> {
       return;
     }
 
-    // Reset paging when switching category so the feed feels "fresh" and stays memory-light.
+    // Reset paging when switching category so the feed feels "fresh".
     final int filteredLen =
         state.allQuotes.where((Quote q) => q.category == category).length;
     final int initialCount = filteredLen < _pageSize ? filteredLen : _pageSize;
@@ -155,6 +156,23 @@ class QuoteFeedNotifier extends StateNotifier<QuoteFeedState> {
       selectedFeedCategory: category,
       visibleCount: initialCount,
     );
+  }
+
+  /// Mark a quote as viewed and check if a reshuffle is needed.
+  void markViewed(int quoteId) {
+    _viewedIds.add(quoteId);
+
+    // Once all quotes have been seen, reset and reshuffle for infinite fresh content.
+    if (_viewedIds.length >= state.allQuotes.length) {
+      _viewedIds.clear();
+      final List<Quote> reshuffled = List<Quote>.of(state.allQuotes)
+        ..shuffle(Random());
+      state = state.copyWith(
+        allQuotes: reshuffled,
+        visibleCount:
+            reshuffled.length < _pageSize ? reshuffled.length : _pageSize,
+      );
+    }
   }
 
   Future<void> maybeLoadMore(int currentIndex) async {

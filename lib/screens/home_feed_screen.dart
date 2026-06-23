@@ -37,9 +37,9 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
       return;
     }
 
-    final int startupIndex = state.initialFeedIndex.clamp(0, quotes.length - 1);
-    _lastIndex = startupIndex;
-    _pageController = PageController(initialPage: startupIndex);
+    // Always start at 0 – users scroll downward to discover new quotes.
+    _lastIndex = 0;
+    _pageController = PageController(initialPage: 0);
   }
 
   Future<void> _copyQuote(Quote quote) async {
@@ -147,6 +147,10 @@ class _HomeFeedScreenState extends ConsumerState<HomeFeedScreen> {
                 _lastIndex = index;
                 // Gentle tactile feedback mimics premium reels-like UX.
                 HapticFeedback.selectionClick();
+                // Track this quote as viewed for session freshness.
+                if (index < quotes.length) {
+                  notifier.markViewed(quotes[index].id);
+                }
                 // Pagination preloading: extend the list as user approaches the end.
                 notifier.maybeLoadMore(index);
                 AdService.registerInteraction();
