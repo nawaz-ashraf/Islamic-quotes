@@ -2,7 +2,7 @@ name: islamic_quotes_app
 description: A spiritually calming Islamic Quotes app with reels-like vertical scrolling.
 publish_to: "none"
 
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
